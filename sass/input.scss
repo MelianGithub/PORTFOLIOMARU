@@ -1,12 +1,14 @@
-@font-face{
+@font-face {
     font-family: Recoleta;
     src: url(../fonts/Recoleta-Regular.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: Proxiam;
     src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
 }
-@font-face{
+
+@font-face {
     font-family: Proxiam;
     src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
 }
@@ -30,7 +32,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
 
         .nav {
             display: flex;
@@ -53,7 +55,7 @@ header {
                     color: #3a4646;
                     font-size: 16px;
                     font-weight: bold;
-                    
+
 
                     &:hover {
                         border-bottom: 3px solid white;
@@ -65,21 +67,21 @@ header {
         }
     }
 
-    #header{
-        .header__container{
+    #header {
+        .header__container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .header__body__container{
+            .header__body__container {
                 width: 90%;
                 display: flex;
                 justify-content: flex-start;
-                
 
-                .title__header{
-                    width: 50%;
+
+                .title__header {
+                    width: 40%;
                     height: 300px;
                     padding: 50px;
                     margin-top: 50px;
@@ -87,24 +89,113 @@ header {
                     margin-bottom: 150px;
                     color: red;
 
-                    .title{
-                        font-size: 40px;
+                    .title {
+                        font-size: 60px;
                         font-weight: bold;
                     }
                 }
 
-                .header__text{
-                    width: 50%;
+                .header__text {
+                    width: 60%;
                     height: 300px;
                     padding: 50px;
                     margin-top: 50px;
-                    
-                    .first__text{
+
+                    .first__text {
                         font-size: 20px;
                     }
+                }
+            }
+
+            .title__footer {
+                width: 50%;
+                font-size: 20px;
+                text-align: center;
+                color: orangered;
+            }
+        }
+    }
+
+}
+
+// ---------------------segundo -------
+
+#projects {
+    background: url("../img/fondoinicio2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .projects__container {
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        .projects__title {
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .projects__img__container {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            .projects__img {
+                width: 30%;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
                 }
             }
         }
     }
 
+    .projects__button__container {
+        .projects__button {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+}
+
+#aboutme{
+    background: RGB(28,31,45);
+    padding: 20px;
+    
+    .aboutme__container{
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        // align-items: center;
+        margin: 0 auto;
+
+        .aboutme__img__container{
+            width: 60%;
+            img{
+                width: 50%;
+            }
+        }
+
+        .aboutme__body__container{
+            width: 40%;
+        }
+    } 
+}
+
+footer{
+    background-color: #d8cbcb;
+    width: 100%;
+    height: 35vh;
 }
