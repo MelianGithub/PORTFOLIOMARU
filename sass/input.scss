@@ -13,6 +13,7 @@
     src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     background: url("../img/fondoinicio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +39,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 50px;
 
             .img__logo {
                 width: 20%;
@@ -75,40 +77,42 @@ header {
             align-items: center;
 
             .header__body__container {
-                width: 90%;
+                width: 100%;
+                height: 200px;
                 display: flex;
-                justify-content: flex-start;
+                justify-content: center;
+                align-items: center;    
+                text-align: center;          
 
 
                 .title__header {
-                    width: 40%;
-                    height: 300px;
-                    padding: 50px;
-                    margin-top: 50px;
-                    margin-left: 50px;
-                    margin-bottom: 150px;
+                    width: 30%;
+                    height: auto;
                     color: red;
 
                     .title {
-                        font-size: 60px;
+                        font-size: 55px;
                         font-weight: bold;
                     }
                 }
 
                 .header__text {
                     width: 60%;
-                    height: 300px;
-                    padding: 50px;
-                    margin-top: 50px;
+                    height: auto;
 
                     .first__text {
                         font-size: 20px;
+                        padding: 20px;
+                        text-align: left;
+                        margin-left: 40px;
                     }
                 }
             }
 
-            .title__footer {
-                width: 50%;
+            .title__footer {      
+                position: absolute; 
+                top: 100%;    
+                width: 45%;
                 font-size: 20px;
                 text-align: center;
                 color: orangered;
@@ -121,9 +125,11 @@ header {
 // ---------------------segundo -------
 
 #projects {
-    background: url("../img/fondoinicio2.png");
+    background: url("../img/fondoinicio2.png"), RGB(28, 31, 45);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
+
 
     .projects__container {
 
@@ -134,10 +140,14 @@ header {
         justify-content: center;
         align-items: center;
         padding: 20px;
+        padding-bottom: 60px;
 
         .projects__title {
+            font-family: Proxiam,sans-serif;
             font-size: 30px;
+            font-weight: bold;
             padding: 20px;
+            color: #91769b;
         }
 
         .projects__img__container {
@@ -151,8 +161,18 @@ header {
                 width: 30%;
                 margin: 0 auto;
 
-                img {
+                .foto {
                     width: 100%;
+                    transition: ease-in-out .3s;
+                    cursor: pointer;
+                    filter: grayscale(100);
+
+
+                    &:hover {
+                        filter: none;
+
+
+                    }
                 }
             }
         }
@@ -164,38 +184,99 @@ header {
             border-radius: 10px;
             background-color: transparent;
             cursor: pointer;
+            transition: ease-out .5s;
+
+            &:hover {
+                background-color: rgba(6, 6, 204, 0.361);
+            }
         }
     }
 
 }
 
-#aboutme{
-    background: RGB(28,31,45);
+#aboutme {
+    background: RGB(28, 31, 45);
     padding: 20px;
-    
-    .aboutme__container{
+
+    .aboutme__container {
         width: 80%;
         height: auto;
         display: flex;
         justify-content: flex-start;
-        // align-items: center;
+        align-items: center;
         margin: 0 auto;
 
-        .aboutme__img__container{
+        .aboutme__img__container {
             width: 60%;
-            img{
-                width: 50%;
+
+            img {
+                width: 40%;
             }
         }
 
-        .aboutme__body__container{
+        .aboutme__body__container {
             width: 40%;
+            height: auto;
+
+            .title{
+                font-size: 20px;
+                color: #e9571c;
+                margin-bottom: 50px;
+            }
+
+            .text{
+                margin-bottom: 40px;
+                color: white;
+            }
+
+            .aboutme__button {
+                padding: 12px;
+                background: transparent;
+                border-radius: 20px;
+                border-color: beige;
+                color: white;
+                cursor: pointer;
+
+            }
         }
-    } 
+    }
 }
 
-footer{
+#footer {
     background-color: #d8cbcb;
-    width: 100%;
-    height: 35vh;
+
+
+    .footer__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .logo__footer__container {
+            .logo__footer {
+                width: 120px;
+                position: relative;
+                top: -20px;
+            }
+        }
+
+        .social__container {
+            margin-bottom: 10px;
+            vertical-align: middle;
+            
+
+            i{
+                font-size: 30px;
+                letter-spacing: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .copyRight {
+            padding-bottom: 30px;
+            font-size: 19px;
+        }
+    }
 }
