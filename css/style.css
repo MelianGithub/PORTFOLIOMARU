@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Recoleta;
+  src: url(../fonts/Recoleta-Regular.ttf);
+}
+@font-face {
+  font-family: Proxiam;
+  src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Proxiam, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/fondoinicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+header .navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar__container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar__container .nav .img__logo {
+  width: 20%;
+  cursor: pointer;
+}
+header .navbar__container .nav li {
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+}
+header .navbar__container .nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3a4646;
+  font-size: 18px;
+  font-weight: 900;
+}
+header .navbar__container .nav li a:hover {
+  border-bottom: 3px solid white;
+}
+header #header .header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #header .header__container .title__header__container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #header .header__container .title__header__container .title__header {
+  width: 50%;
+  height: 300px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  color: red;
+}
+header #header .header__container .title__header__container .title__header .title {
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
