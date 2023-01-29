@@ -6,6 +6,10 @@
   font-family: Proxiam;
   src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
 }
+@font-face {
+  font-family: Proxiam;
+  src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,8 +48,8 @@ header .navbar__container .nav li a {
   cursor: pointer;
   text-decoration: none;
   color: #3a4646;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: bold;
 }
 header .navbar__container .nav li a:hover {
   border-bottom: 3px solid white;
@@ -56,22 +60,32 @@ header #header .header__container {
   justify-content: center;
   align-items: center;
 }
-header #header .header__container .title__header__container {
+header #header .header__container .header__body__container {
   width: 90%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-header #header .header__container .title__header__container .title__header {
+header #header .header__container .header__body__container .title__header {
   width: 50%;
   height: 300px;
   padding: 50px;
   margin-top: 50px;
+  margin-left: 50px;
   margin-bottom: 150px;
   color: red;
 }
-header #header .header__container .title__header__container .title__header .title {
+header #header .header__container .header__body__container .title__header .title {
   font-size: 40px;
+  font-weight: bold;
+}
+header #header .header__container .header__body__container .header__text {
+  width: 50%;
+  height: 300px;
+  padding: 50px;
+  margin-top: 50px;
+}
+header #header .header__container .header__body__container .header__text .first__text {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
