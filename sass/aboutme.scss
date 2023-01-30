@@ -9,40 +9,61 @@ body {
 
 
   .aboutme__container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-    .infoabout__contenedor {
+    .primero {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 50px;
 
-      .primero,
-      .segundo {
-        width: 100%;
-        display: flex;
-        padding: 20px;
+      .foto__primero {
+        width: 60%;
 
-        .foto__primero,
-        .foto__segundo {
-          width: 50%;
-          margin-right: 20px;
-
-          img {
-            width: 400px;
-          }
-          .texto__primero,
-          .texto__segundo {
-            width: 30%;
-            
-          }
+        img {
+          width: 100%;
         }
       }
 
+      .texto__primero {
+        width: 80%;
+        margin-left: 50px;
+      }
+
+    }
+
+    .segundo {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: row-reverse;
+      
+
+      .foto__segundo {
+        width: 60%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .texto__segundo {
+        width: 80%;
+        margin-right: 50px;
+      }
+    }
+    .button__container{
+      margin-top: 50px;
+      button{
+        padding: 10px;
+      }
     }
   }
 }

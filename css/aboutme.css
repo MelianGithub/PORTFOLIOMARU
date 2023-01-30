@@ -9,6 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 .navbar__container .nav {
   display: flex;
@@ -71,46 +73,52 @@ body {
   background-size: cover;
 }
 body .aboutme__container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-body .aboutme__container .infoabout__contenedor {
+body .aboutme__container .primero {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+body .aboutme__container .primero .foto__primero {
+  width: 60%;
+}
+body .aboutme__container .primero .foto__primero img {
+  width: 100%;
+}
+body .aboutme__container .primero .texto__primero {
   width: 80%;
+  margin-left: 50px;
 }
-body .aboutme__container .infoabout__contenedor .primero,
-body .aboutme__container .infoabout__contenedor .segundo {
-  width: 100%;
+body .aboutme__container .segundo {
   display: flex;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  flex-direction: row-reverse;
 }
-body .aboutme__container .infoabout__contenedor .primero .foto__primero,
-body .aboutme__container .infoabout__contenedor .primero .foto__segundo,
-body .aboutme__container .infoabout__contenedor .segundo .foto__primero,
-body .aboutme__container .infoabout__contenedor .segundo .foto__segundo {
-  width: 50%;
-  margin-right: 20px;
+body .aboutme__container .segundo .foto__segundo {
+  width: 60%;
 }
-body .aboutme__container .infoabout__contenedor .primero .foto__primero img,
-body .aboutme__container .infoabout__contenedor .primero .foto__segundo img,
-body .aboutme__container .infoabout__contenedor .segundo .foto__primero img,
-body .aboutme__container .infoabout__contenedor .segundo .foto__segundo img {
-  width: 1px;
+body .aboutme__container .segundo .foto__segundo img {
+  width: 100%;
 }
-body .aboutme__container .infoabout__contenedor .primero .foto__primero .texto__primero,
-body .aboutme__container .infoabout__contenedor .primero .foto__primero .texto__segundo,
-body .aboutme__container .infoabout__contenedor .primero .foto__segundo .texto__primero,
-body .aboutme__container .infoabout__contenedor .primero .foto__segundo .texto__segundo,
-body .aboutme__container .infoabout__contenedor .segundo .foto__primero .texto__primero,
-body .aboutme__container .infoabout__contenedor .segundo .foto__primero .texto__segundo,
-body .aboutme__container .infoabout__contenedor .segundo .foto__segundo .texto__primero,
-body .aboutme__container .infoabout__contenedor .segundo .foto__segundo .texto__segundo {
-  width: 30%;
+body .aboutme__container .segundo .texto__segundo {
+  width: 80%;
+  margin-right: 50px;
+}
+body .aboutme__container .button__container {
+  margin-top: 50px;
+}
+body .aboutme__container .button__container button {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=aboutme.css.map */
