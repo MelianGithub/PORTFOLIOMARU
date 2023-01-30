@@ -1,0 +1,48 @@
+@use 'reset';
+@use 'navbar';
+@use 'footer';
+
+body {
+  background-image: url("../img/fondoabout.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  .aboutme__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .infoabout__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+
+      .primero,
+      .segundo {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+
+        .foto__primero,
+        .foto__segundo {
+          width: 50%;
+          margin-right: 20px;
+
+          img {
+            width: 400px;
+          }
+          .texto__primero,
+          .texto__segundo {
+            width: 30%;
+            
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Proxiam, sans-serif;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.navbar__container .nav .img__logo {
+  width: 20%;
+  cursor: pointer;
+}
+.navbar__container .nav li {
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+}
+.navbar__container .nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3a4646;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar__container .nav li a:hover {
+  border-bottom: 3px solid white;
+}
+
+#footer {
+  background-color: #d8cbcb;
+}
+#footer .footer__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .footer__container .logo__footer__container .logo__footer {
+  width: 120px;
+  position: relative;
+  top: -20px;
+}
+#footer .footer__container .social__container {
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+#footer .footer__container .social__container i {
+  font-size: 30px;
+  letter-spacing: 20px;
+  cursor: pointer;
+}
+#footer .footer__container .copyRight {
+  padding-bottom: 30px;
+  font-size: 19px;
+}
+
+body {
+  background-image: url("../img/fondoabout.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .aboutme__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .aboutme__container .infoabout__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+body .aboutme__container .infoabout__contenedor .primero,
+body .aboutme__container .infoabout__contenedor .segundo {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+body .aboutme__container .infoabout__contenedor .primero .foto__primero,
+body .aboutme__container .infoabout__contenedor .primero .foto__segundo,
+body .aboutme__container .infoabout__contenedor .segundo .foto__primero,
+body .aboutme__container .infoabout__contenedor .segundo .foto__segundo {
+  width: 50%;
+  margin-right: 20px;
+}
+body .aboutme__container .infoabout__contenedor .primero .foto__primero img,
+body .aboutme__container .infoabout__contenedor .primero .foto__segundo img,
+body .aboutme__container .infoabout__contenedor .segundo .foto__primero img,
+body .aboutme__container .infoabout__contenedor .segundo .foto__segundo img {
+  width: 1px;
+}
+body .aboutme__container .infoabout__contenedor .primero .foto__primero .texto__primero,
+body .aboutme__container .infoabout__contenedor .primero .foto__primero .texto__segundo,
+body .aboutme__container .infoabout__contenedor .primero .foto__segundo .texto__primero,
+body .aboutme__container .infoabout__contenedor .primero .foto__segundo .texto__segundo,
+body .aboutme__container .infoabout__contenedor .segundo .foto__primero .texto__primero,
+body .aboutme__container .infoabout__contenedor .segundo .foto__primero .texto__segundo,
+body .aboutme__container .infoabout__contenedor .segundo .foto__segundo .texto__primero,
+body .aboutme__container .infoabout__contenedor .segundo .foto__segundo .texto__segundo {
+  width: 30%;
+}
+
+/*# sourceMappingURL=aboutme.css.map */

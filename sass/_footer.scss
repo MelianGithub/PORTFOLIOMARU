@@ -1,0 +1,37 @@
+#footer {
+    background-color: #d8cbcb;
+
+    .footer__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .logo__footer__container {
+            .logo__footer {
+                width: 120px;
+                position: relative;
+                top: -20px;
+            }
+        }
+
+        .social__container {
+            margin-bottom: 10px;
+            vertical-align: middle;
+            
+
+            i{
+                font-size: 30px;
+                letter-spacing: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .copyRight {
+            padding-bottom: 30px;
+            font-size: 19px;
+        }
+    }
+}

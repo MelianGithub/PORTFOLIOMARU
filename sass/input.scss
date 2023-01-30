@@ -1,3 +1,7 @@
+@use 'reset';
+@use 'navbar';
+@use 'footer';
+
 @font-face {
     font-family: Recoleta;
     src: url(../fonts/Recoleta-Regular.ttf);
@@ -14,12 +18,7 @@
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Proxiam, sans-serif;
-}
+
 
 header {
     width: 100%;
@@ -28,46 +27,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-
-    .navbar__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 50px;
-
-            .img__logo {
-                width: 20%;
-                cursor: pointer;
-            }
-
-            li {
-                padding: 20px;
-                margin: 20px;
-                list-style: none;
-
-                a {
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: #3a4646;
-                    font-size: 16px;
-                    font-weight: bold;
-
-
-                    &:hover {
-                        border-bottom: 3px solid white;
-                    }
-                }
-
-            }
-
-        }
-    }
 
     #header {
         .header__container {
@@ -242,41 +201,3 @@ header {
     }
 }
 
-#footer {
-    background-color: #d8cbcb;
-
-
-    .footer__container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-        .logo__footer__container {
-            .logo__footer {
-                width: 120px;
-                position: relative;
-                top: -20px;
-            }
-        }
-
-        .social__container {
-            margin-bottom: 10px;
-            vertical-align: middle;
-            
-
-            i{
-                font-size: 30px;
-                letter-spacing: 20px;
-                cursor: pointer;
-            }
-        }
-
-        .copyRight {
-            padding-bottom: 30px;
-            font-size: 19px;
-        }
-    }
-}
