@@ -65,61 +65,49 @@
   font-size: 19px;
 }
 
-body {
+html {
   background-image: url("../img/fondoabout.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .aboutme__container {
+html .projects__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
-body .aboutme__container .design__container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
-}
-body .aboutme__container .design__container .design__foto__container {
+html .projects__container .title__projects {
   width: 60%;
-}
-body .aboutme__container .design__container .design__foto__container img {
-  width: 100%;
-}
-body .aboutme__container .design__container .design__text__container {
-  width: 80%;
-  margin-left: 50px;
-}
-body .aboutme__container .design__container .design__text__container .title_ds {
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
   color: red;
 }
-body .aboutme__container .segundo {
+html .projects__container .img__projects__container {
+  padding: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+html .projects__container .img__projects__container .primero,
+html .projects__container .img__projects__container .segundo {
+  display: flex;
+  width: 80%;
+}
+html .projects__container .img__projects__container .primero .img__wrapp,
+html .projects__container .img__projects__container .segundo .img__wrapp {
+  margin: 2px;
+}
+html .projects__container .img__projects__container .primero .img__wrapp img,
+html .projects__container .img__projects__container .segundo .img__wrapp img {
+  width: 100%;
+}
+html .projects__container .img__projects__container .invertido {
   flex-direction: row-reverse;
 }
-body .aboutme__container .segundo .foto__segundo {
-  width: 60%;
-}
-body .aboutme__container .segundo .foto__segundo img {
-  width: 100%;
-}
-body .aboutme__container .segundo .texto__segundo {
-  width: 80%;
-  margin-right: 50px;
-}
-body .aboutme__container .button__container {
-  margin-top: 50px;
-}
-body .aboutme__container .button__container button {
-  padding: 10px;
-}
 
-/*# sourceMappingURL=aboutme.css.map */
+/*# sourceMappingURL=projects.css.map */

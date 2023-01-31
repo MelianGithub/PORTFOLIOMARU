@@ -18,13 +18,13 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 
-    .primero {
+    .design__container {
       display: flex;
       width: 100%;
       height: 100%;
       margin-bottom: 50px;
 
-      .foto__primero {
+      .design__foto__container {
         width: 60%;
 
         img {
@@ -32,9 +32,13 @@ body {
         }
       }
 
-      .texto__primero {
+      .design__text__container {
         width: 80%;
         margin-left: 50px;
+
+        .title_ds{
+          color: red;
+        }
       }
 
     }

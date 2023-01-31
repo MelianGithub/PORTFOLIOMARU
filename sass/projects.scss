@@ -1,0 +1,59 @@
+@use 'reset';
+@use 'navbar';
+@use 'footer';
+
+html{
+    background-image: url("../img/fondoabout.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .projects__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .title__projects{
+            width: 60%;
+            text-align: center;
+            margin: 40px;
+            padding: 20px;
+            color: red;
+        }
+
+        .img__projects__container{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+          
+
+            .primero,
+            .segundo{
+                
+                display: flex;
+                width: 80%;
+                
+               .img__wrapp{
+                margin: 2px;
+
+                img{
+                    width: 100%;
+                    
+                }
+                }
+                
+            }
+
+            .invertido{
+                flex-direction: row-reverse;
+            }
+
+        }
+    }
+}
