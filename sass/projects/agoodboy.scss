@@ -1,0 +1,52 @@
+@use '../reset';
+@use '../navbar';
+@use '../footer';
+
+body {
+    background-color: rgb(196, 220, 212);
+
+    .grande {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+
+        .chico1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .chico2 {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            flex-wrap: wrap;
+
+            .div1{
+                width: 35%;
+                
+                img {
+                    width: 90%;
+                    padding: 5px;
+                }
+            }
+
+            .div{
+                width: 63%;
+                
+                img {
+                    width: 90%;
+                    padding: 5px;
+                }
+            }
+           
+
+        }
+    }
+
+}
