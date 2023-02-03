@@ -75,61 +75,72 @@
   font-size: 19px;
 }
 
-@font-face {
-  font-family: Recoleta;
-  src: url(../fonts/Recoleta-Regular.ttf);
-}
-@font-face {
-  font-family: Proxiam;
-  src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
-}
-@font-face {
-  font-family: Proxiam;
-  src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
-}
-html {
-  background-image: url("../img/fondoabout.jpg");
-  background-repeat: no-repeat;
+.fullpage__container {
+  background: url("../../img/fondoproject.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
-html .projects__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.fullpage__container .grande {
   width: 100%;
-  height: auto;
-}
-html .projects__container .title__projects {
-  width: 60%;
+  height: 100%;
   text-align: center;
-  margin: 40px;
+}
+.fullpage__container .grande .chico1 {
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
+}
+.fullpage__container .grande .chico1 .pri {
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: red;
 }
-html .projects__container .img__projects__container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: auto;
+.fullpage__container .grande .chico1 .sec {
+  color: darkmagenta;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-html .projects__container .img__projects__container .primero,
-html .projects__container .img__projects__container .segundo {
+.fullpage__container .grande .chico1 .ter {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+}
+.fullpage__container .grande .chico1 .ter p {
   width: 80%;
 }
-html .projects__container .img__projects__container .primero .img__wrapp,
-html .projects__container .img__projects__container .segundo .img__wrapp {
-  margin: 2px;
+.fullpage__container .grande .chico2 {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-html .projects__container .img__projects__container .primero .img__wrapp img,
-html .projects__container .img__projects__container .segundo .img__wrapp img {
+.fullpage__container .grande .chico2 .padre {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  gap: 15px;
+}
+.fullpage__container .grande .chico2 .padre img {
   width: 100%;
 }
-html .projects__container .img__projects__container .invertido {
-  flex-direction: row-reverse;
+.fullpage__container .grande .chico3 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% auto;
+}
+.fullpage__container .grande .chico3 .caja {
+  width: 25%;
+  margin: 15px;
+  margin-bottom: 50px;
+}
+.fullpage__container .grande .chico3 img {
+  width: 100%;
 }
 
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=serene.css.map */

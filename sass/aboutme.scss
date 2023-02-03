@@ -1,6 +1,21 @@
-@use 'reset';
-@use 'navbar';
-@use 'footer';
+@use './parcel/reset';
+@use './parcel/navbar';
+@use './parcel/footer';
+
+@font-face {
+  font-family: Recoleta;
+  src: url(../fonts/Recoleta-Regular.ttf);
+}
+
+@font-face {
+  font-family: Proxiam;
+  src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
+}
+
+@font-face {
+  font-family: Proxiam;
+  src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
+}
 
 body {
   background-image: url("../img/fondoabout.jpg");
