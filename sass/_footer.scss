@@ -10,10 +10,12 @@
 
 
         .logo__footer__container {
+            width: 10%;
             .logo__footer {
-                width: 120px;
+                width: 100%;
                 position: relative;
                 top: -20px;
+                // left: 136px;
             }
         }
 

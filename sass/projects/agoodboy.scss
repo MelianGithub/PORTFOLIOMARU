@@ -2,51 +2,88 @@
 @use '../navbar';
 @use '../footer';
 
-body {
-    background-color: rgb(196, 220, 212);
+.fullpage__container {
+    background: url("../../img/fondoproject.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .grande {
-        width: 80%;
-        display: flex;
-        margin: 0 auto;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
 
         .chico1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+
+            .pri {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: red;
+            }
+
+            .sec {
+                color: darkmagenta;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .ter {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+               
+
+                p{
+                    width: 80%;
+                    
+                    
+                }
+            }
         }
 
         .chico2 {
             width: 80%;
-            height: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+
+            .padre {
+                width: 80%;
+                display: flex;
+                margin: 0 auto;
+                gap: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .chico3{
+            width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 auto;
-            flex-wrap: wrap;
+            margin: 0% auto;
 
-            .div1{
-                width: 35%;
+            .caja{
+                width: 25%;
+                margin: 15px;
+                margin-bottom: 50px;
                 
-                img {
-                    width: 90%;
-                    padding: 5px;
-                }
-            }
-
-            .div{
-                width: 63%;
+               
                 
-                img {
-                    width: 90%;
-                    padding: 5px;
-                }
             }
-           
-
+            img{
+                width: 100%;
+            }
         }
     }
-
 }

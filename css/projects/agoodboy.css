@@ -7,8 +7,11 @@
 
 .navbar__container {
   display: flex;
+  width: 80%;
+  height: auto;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .navbar__container .nav {
   display: flex;
@@ -17,12 +20,12 @@
   margin-bottom: 50px;
 }
 .navbar__container .nav .img__logo {
-  width: 20%;
+  width: 25%;
   cursor: pointer;
 }
 .navbar__container .nav li {
   padding: 20px;
-  margin: 20px;
+  width: 20%;
   list-style: none;
 }
 .navbar__container .nav li a {
@@ -46,8 +49,11 @@
   flex-direction: column;
   align-items: center;
 }
+#footer .footer__container .logo__footer__container {
+  width: 10%;
+}
 #footer .footer__container .logo__footer__container .logo__footer {
-  width: 120px;
+  width: 100%;
   position: relative;
   top: -20px;
 }
@@ -65,43 +71,72 @@
   font-size: 19px;
 }
 
-body {
-  background-color: rgb(196, 220, 212);
+.fullpage__container {
+  background: url("../../img/fondoproject.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-body .grande {
+.fullpage__container .grande {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.fullpage__container .grande .chico1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.fullpage__container .grande .chico1 .pri {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: red;
+}
+.fullpage__container .grande .chico1 .sec {
+  color: darkmagenta;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fullpage__container .grande .chico1 .ter {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.fullpage__container .grande .chico1 .ter p {
+  width: 80%;
+}
+.fullpage__container .grande .chico2 {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fullpage__container .grande .chico2 .padre {
   width: 80%;
   display: flex;
   margin: 0 auto;
-  flex-direction: column;
-  align-items: center;
+  gap: 15px;
 }
-body .grande .chico1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.fullpage__container .grande .chico2 .padre img {
+  width: 100%;
 }
-body .grande .chico2 {
+.fullpage__container .grande .chico3 {
   width: 80%;
-  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  margin: 0% auto;
 }
-body .grande .chico2 .div1 {
-  width: 35%;
+.fullpage__container .grande .chico3 .caja {
+  width: 25%;
+  margin: 15px;
+  margin-bottom: 50px;
 }
-body .grande .chico2 .div1 img {
-  width: 90%;
-  padding: 5px;
-}
-body .grande .chico2 .div {
-  width: 63%;
-}
-body .grande .chico2 .div img {
-  width: 90%;
-  padding: 5px;
+.fullpage__container .grande .chico3 img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=agoodboy.css.map */
