@@ -1,3 +1,7 @@
+@use '../parcel/reset';
+@use '../parcel/navbar';
+@use '../parcel/footer';
+
 .fullpage__container {
     background: url("../../img/fondoproject.jpg");
     background-size: cover;
@@ -32,12 +36,12 @@
                 margin-bottom: 20px;
                 display: flex;
                 justify-content: center;
-               
 
-                p{
+
+                p {
                     width: 80%;
-                    
-                    
+
+
                 }
             }
         }
@@ -62,22 +66,23 @@
 
         }
 
-        .chico3{
+        .chico3 {
             width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0% auto;
 
-            .caja{
+            .caja {
                 width: 25%;
                 margin: 15px;
                 margin-bottom: 50px;
-                
-               
-                
+
+
+
             }
-            img{
+
+            img {
                 width: 100%;
             }
         }
