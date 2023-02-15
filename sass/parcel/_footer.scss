@@ -1,5 +1,5 @@
 #footer {
-    background-color: #d8cbcb;
+    background-color: #f7f1f7;
 
     .footer__container {
         width: 100%;
@@ -15,7 +15,7 @@
             .logo__footer {
                 width: 100%;
                 position: relative;
-                top: -20px;
+                top: -30px;
                 // left: 136px;
             }
         }
@@ -24,6 +24,9 @@
             margin-bottom: 10px;
             vertical-align: middle;
             
+            a{
+                color: #c8b3ce;
+            }
 
             i{
                 font-size: 30px;
@@ -36,6 +39,9 @@
             
             padding-bottom: 30px;
             font-size: 19px;
+            font-family: Proxima;
+            font-style: italic;
+            color: #999;
         }
     }
 }
