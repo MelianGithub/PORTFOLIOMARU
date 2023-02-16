@@ -17,78 +17,73 @@
     src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
 }
 
-.fullpage__container {
+header {
+    width: 100%;
+    height: 120vh;
+    background: url(../img/headerimg.png), #d8cbcd;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 
-    header {
+
+    .header__container {
         width: 100%;
-        height: 150vh;
-        background: url(../img/header.png),RGB(216,203,203);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-       
-        
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: -30px;
 
-
-        .header__container {
-            width: 100%;
-            height: 700px;
+        .header__body__container {
+            width: 85%;
+            height: 80vh;
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
-
-            .header__body__container {
-                width: 90%;
-                height: 200px;
-                margin: 25px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                text-align: center;
+            text-align: center;
+            position: relative;
+            top: -60px;
+            
 
 
-                .title__header {
-                    width: 30%;
-                    height: auto;
-                    color: red;
+            .title__header {
+                width: 35%;
 
-                    .title {
-                        font-family: Recoleta, sans-serif;
-                        font-size: 60px;
-                        color: #ff7443;
-                        font-weight: bold;
-                        text-align: left;
-                    }
-                }
-
-                .header__text {
-                    width: 40%;
-
-                    .first__text {
-                        font-size: 20px;
-                        text-align: left;
-                        color: #91769b;
-                        
-                    }
+                img {
+                    width: 90%;
                 }
             }
 
-            .title__footer {
-                display: flex;
-                width: 40%;
-                height: auto;
-                padding: 20px;
-                font-size: 20px;
-                text-align: center;
-                color: orangered;
-                
+            .header__text {
+                width: 55%;
 
+                .first__text {
+                    width: 100%;
+                    font-size: 20px;
+                    text-align: left;
+                    color: #91769b;
+
+                }
+            }
+        }
+
+        .title__footer {
+            width: 100%;
+            height: auto;
+
+
+            p {
+                margin: 0 auto;
+                width: 40%;
+                text-align: center;
             }
         }
     }
-
 }
+
+
 
 // ---------------------segundo -------
 
@@ -97,26 +92,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    
-    
-
 
     .projects__container {
 
         width: 100%;
-        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
-        padding-bottom: 60px;
+
+
 
         .projects__title {
             font-family: Recoleta, cursive;
             font-size: 30px;
             font-weight: bold;
-            padding: 20px;
+            // padding: 20px;
             color: #91769b;
         }
 
@@ -127,34 +118,29 @@
             justify-content: space-evenly;
             align-items: center;
             padding: 20px;
-            margin-bottom: 30px;
+
 
             .projects__img {
-                width: 30%;
+                width: 60%;
                 height: 100%;
-                // margin: 0 auto;
+                padding: 5px;
+
 
                 .foto {
                     width: 100%;
                     height: 100%;
                     transition: ease-in-out .3s;
                     cursor: pointer;
-                    filter: grayscale(100);
 
-
-
-                    &:hover {
-                        filter: none;
-
-
-                    }
                 }
             }
         }
     }
 
     .projects__button__container {
-        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
         .projects__button {
             padding: 10px;
             border-color: #91769b;
