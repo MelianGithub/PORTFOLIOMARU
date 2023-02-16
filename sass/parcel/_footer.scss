@@ -1,4 +1,5 @@
 #footer {
+   
     background-color: #f7f1f7;
 
     .footer__container {
@@ -16,27 +17,33 @@
                 width: 100%;
                 position: relative;
                 top: -30px;
-                // left: 136px;
+                
             }
         }
 
         .social__container {
+            
             margin-bottom: 10px;
             vertical-align: middle;
+            text-align: center;
+            margin-left: 40px;
             
             a{
+                text-align: center;
                 color: #c8b3ce;
             }
 
             i{
                 font-size: 30px;
                 letter-spacing: 20px;
-                cursor: pointer;
+                
+               
             }
         }
 
         .copyRight {
-            
+            text-align: center;
+            align-items: center;
             padding-bottom: 30px;
             font-size: 19px;
             font-family: Proxima;

@@ -1,17 +1,38 @@
+@font-face {
+    font-family: RecoletaMed;
+    src: url(../../fonts/Recoleta/Recoleta-Medium.ttf);
+}
+@font-face {
+    font-family: RecoletaBold;
+    src: url(../../fonts/Recoleta/Recoleta-Bold.ttf);
+}
+
+@font-face {
+    font-family: ProxiamReg;
+    src: url(../../fonts/proxiam/ProxiamReg.ttf);
+}
+
+@font-face {
+    font-family: ProxiamBold;
+    src: url(../../fonts/proxiam/ProxiamBold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Proxiam, sans-serif;
-
-
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
+    font-family: ProxiamBold;
 }
 
 button {
     cursor: pointer;
+}
+
+p {
+    font-family: ProxiamReg;
 }

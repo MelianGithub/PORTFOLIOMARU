@@ -2,20 +2,6 @@
 @use './parcel/navbar';
 @use './parcel/footer';
 
-@font-face {
-    font-family: Recoleta;
-    src: url(../fonts/Recoleta-Regular.ttf);
-}
-
-@font-face {
-    font-family: Proxiam;
-    src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
-}
-
-@font-face {
-    font-family: Proxiam;
-    src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
-}
 
 header {
     width: 100%;
@@ -57,10 +43,10 @@ header {
             }
 
             .header__text {
-                width: 55%;
+                width: 50%;
 
                 .first__text {
-                    width: 90%;
+                    width: 85%;
                     font-size: 20px;
                     text-align: left;
                     color: #91769b;
@@ -75,7 +61,7 @@ header {
             width: 100%;
             height: auto;
             position: relative;
-            top: -30px;
+            top: -40px;
 
 
             p {
@@ -84,6 +70,7 @@ header {
                 width: 40%;
                 text-align: center;
                 font-size: 22px;
+                line-height: 120%;
             }
         }
     }
@@ -111,11 +98,11 @@ header {
 
 
         .projects__title {
-            font-family: Recoleta, cursive;
+            font-family: RecoletaBold;
             font-size: 30px;
-            font-weight: bold;
             margin-bottom: 30px;
             color: #91769b;
+
         }
 
         .projects__img__container {
@@ -181,7 +168,7 @@ header {
         margin: 0 auto;
 
         .aboutme__img__container {
-            width: 50%;
+            width: 40%;
             height: 100%;
 
             img {
@@ -192,20 +179,23 @@ header {
         }
 
         .aboutme__body__container {
-            width: 35%;
+            width: 40%;
             height: auto;
 
 
             .title {
-                font-size: 20px;
+                font-size: 30px;
                 color: #e9571c;
-                font-weight: bold;
+                font-family: RecoletaMed;
                 margin-bottom: 50px;
+                font-weight:lighter;
+                
             }
 
             .text {
                 margin-bottom: 40px;
                 color: #91769b;
+                line-height: 120%
             }
 
             .aboutme__button {
