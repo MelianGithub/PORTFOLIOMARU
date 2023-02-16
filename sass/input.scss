@@ -20,12 +20,15 @@
 .fullpage__container {
 
     header {
-        min-height: 100px;
-        min-width: 100%;
-        background-image: url(../img/header.png);
+        width: 100%;
+        height: 150vh;
+        background: url(../img/header.png),RGB(216,203,203);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+       
+        
+
 
         .header__container {
             width: 100%;
@@ -36,9 +39,9 @@
             align-items: center;
 
             .header__body__container {
-                width: 100%;
+                width: 90%;
                 height: 200px;
-                margin: 20px;
+                margin: 25px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -52,9 +55,10 @@
 
                     .title {
                         font-family: Recoleta, sans-serif;
-                        font-size: 58px;
-                        font-style: italic;
+                        font-size: 60px;
+                        color: #ff7443;
                         font-weight: bold;
+                        text-align: left;
                     }
                 }
 
@@ -64,6 +68,7 @@
                     .first__text {
                         font-size: 20px;
                         text-align: left;
+                        color: #91769b;
                         
                     }
                 }
@@ -71,16 +76,14 @@
 
             .title__footer {
                 display: flex;
-                width: 50%;
+                width: 40%;
                 height: auto;
                 padding: 20px;
                 font-size: 20px;
                 text-align: center;
                 color: orangered;
+                
 
-                p{
-                    
-                }
             }
         }
     }
@@ -94,9 +97,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    position: relative;
-    top: -50px;
-    z-index: -1;
+    
+    
 
 
     .projects__container {
@@ -111,7 +113,7 @@
         padding-bottom: 60px;
 
         .projects__title {
-            font-family: Proxiam, sans-serif;
+            font-family: Recoleta, cursive;
             font-size: 30px;
             font-weight: bold;
             padding: 20px;
@@ -125,6 +127,7 @@
             justify-content: space-evenly;
             align-items: center;
             padding: 20px;
+            margin-bottom: 30px;
 
             .projects__img {
                 width: 30%;
@@ -151,15 +154,17 @@
     }
 
     .projects__button__container {
+        margin-bottom: 40px;
         .projects__button {
             padding: 10px;
+            border-color: #91769b;
             border-radius: 10px;
             background-color: transparent;
             cursor: pointer;
             transition: ease-out .5s;
 
             &:hover {
-                background-color: rgba(6, 6, 204, 0.361);
+                background-color: rgba(56, 158, 119, 0.14);
             }
 
             a {

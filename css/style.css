@@ -5,6 +5,18 @@
   font-family: Proxiam, sans-serif;
 }
 
+@font-face {
+  font-family: Recoleta;
+  src: url(../fonts/Recoleta-Regular.ttf);
+}
+@font-face {
+  font-family: Proxiam;
+  src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
+}
+@font-face {
+  font-family: ProxiamBold;
+  src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
+}
 .navbar__container {
   display: flex;
   width: 80%;
@@ -18,7 +30,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  padding-top: 10px;
 }
 .navbar__container .nav .logo__wrapper {
   width: 200px;
@@ -94,12 +106,12 @@
   src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
 }
 .fullpage__container header {
-  min-height: 100px;
-  min-width: 100%;
-  background-image: url(../img/header.png);
+  width: 100%;
+  height: 150vh;
+  background: url(../img/header.png), RGB(216, 203, 203);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 .fullpage__container header .header__container {
   width: 100%;
@@ -110,9 +122,9 @@
   align-items: center;
 }
 .fullpage__container header .header__container .header__body__container {
-  width: 100%;
+  width: 90%;
   height: 200px;
-  margin: 20px;
+  margin: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,9 +137,10 @@
 }
 .fullpage__container header .header__container .header__body__container .title__header .title {
   font-family: Recoleta, sans-serif;
-  font-size: 58px;
-  font-style: italic;
+  font-size: 60px;
+  color: #ff7443;
   font-weight: bold;
+  text-align: left;
 }
 .fullpage__container header .header__container .header__body__container .header__text {
   width: 40%;
@@ -135,24 +148,23 @@
 .fullpage__container header .header__container .header__body__container .header__text .first__text {
   font-size: 20px;
   text-align: left;
+  color: #91769b;
 }
 .fullpage__container header .header__container .title__footer {
   display: flex;
-  width: 50%;
+  width: 40%;
   height: auto;
   padding: 20px;
   font-size: 20px;
   text-align: center;
   color: orangered;
 }
+
 #projects {
   background: url("../img/fondoinicio3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  position: relative;
-  top: -50px;
-  z-index: -1;
 }
 #projects .projects__container {
   width: 100%;
@@ -165,7 +177,7 @@
   padding-bottom: 60px;
 }
 #projects .projects__container .projects__title {
-  font-family: Proxiam, sans-serif;
+  font-family: Recoleta, cursive;
   font-size: 30px;
   font-weight: bold;
   padding: 20px;
@@ -178,6 +190,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  margin-bottom: 30px;
 }
 #projects .projects__container .projects__img__container .projects__img {
   width: 30%;
@@ -193,15 +206,19 @@
 #projects .projects__container .projects__img__container .projects__img .foto:hover {
   filter: none;
 }
+#projects .projects__button__container {
+  margin-bottom: 40px;
+}
 #projects .projects__button__container .projects__button {
   padding: 10px;
+  border-color: #91769b;
   border-radius: 10px;
   background-color: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
 }
 #projects .projects__button__container .projects__button:hover {
-  background-color: rgba(6, 6, 204, 0.361);
+  background-color: rgba(56, 158, 119, 0.14);
 }
 #projects .projects__button__container .projects__button a {
   text-decoration: none;
