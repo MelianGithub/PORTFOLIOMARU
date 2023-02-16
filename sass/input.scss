@@ -45,7 +45,7 @@ header {
             text-align: center;
             position: relative;
             top: -60px;
-            
+
 
 
             .title__header {
@@ -60,10 +60,12 @@ header {
                 width: 55%;
 
                 .first__text {
-                    width: 100%;
+                    width: 90%;
                     font-size: 20px;
                     text-align: left;
                     color: #91769b;
+                    margin: 0 auto;
+                    line-height: 1.3em;
 
                 }
             }
@@ -72,12 +74,16 @@ header {
         .title__footer {
             width: 100%;
             height: auto;
+            position: relative;
+            top: -30px;
 
 
             p {
+                color: #e9571c;
                 margin: 0 auto;
                 width: 40%;
                 text-align: center;
+                font-size: 22px;
             }
         }
     }
@@ -92,6 +98,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    padding-bottom: 40px;
 
     .projects__container {
 
@@ -107,7 +114,7 @@ header {
             font-family: Recoleta, cursive;
             font-size: 30px;
             font-weight: bold;
-            // padding: 20px;
+            margin-bottom: 30px;
             color: #91769b;
         }
 
@@ -121,7 +128,7 @@ header {
 
 
             .projects__img {
-                width: 60%;
+                width: 100%;
                 height: 100%;
                 padding: 5px;
 
@@ -129,7 +136,6 @@ header {
                 .foto {
                     width: 100%;
                     height: 100%;
-                    transition: ease-in-out .3s;
                     cursor: pointer;
 
                 }
@@ -154,7 +160,6 @@ header {
             }
 
             a {
-                text-decoration: none;
                 color: #91769b;
                 font-weight: bold;
             }
@@ -164,7 +169,8 @@ header {
 }
 
 #aboutme {
-    padding: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
 
     .aboutme__container {
         width: 80%;
@@ -178,40 +184,41 @@ header {
             width: 50%;
             height: 100%;
 
-
             img {
-                width: 80%;
-                height: 90%;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
-                object-position: center;
-                border-radius: 5px;
             }
         }
 
         .aboutme__body__container {
-            width: 30%;
+            width: 35%;
             height: auto;
 
 
             .title {
                 font-size: 20px;
                 color: #e9571c;
+                font-weight: bold;
                 margin-bottom: 50px;
             }
 
             .text {
                 margin-bottom: 40px;
-                color: black;
+                color: #91769b;
             }
 
             .aboutme__button {
-                padding: 12px;
-                background: transparent;
-                border-radius: 20px;
-                border-color: beige;
-                color: black;
-                cursor: pointer;
+                padding: 10px;
+                border-color: #91769b;
+                border-radius: 10px;
+                background-color: transparent;
 
+
+                a {
+                    color: #91769b;
+                    font-weight: bold;
+                }
 
 
             }

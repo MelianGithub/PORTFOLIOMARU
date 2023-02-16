@@ -5,18 +5,15 @@
   font-family: Proxiam, sans-serif;
 }
 
-@font-face {
-  font-family: Recoleta;
-  src: url(../fonts/Recoleta-Regular.ttf);
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
-@font-face {
-  font-family: Proxiam;
-  src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
+
+button {
+  cursor: pointer;
 }
-@font-face {
-  font-family: ProxiamBold;
-  src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
-}
+
 .navbar__container {
   display: flex;
   width: 80%;
@@ -48,7 +45,7 @@
 .navbar__container .nav li a {
   cursor: pointer;
   text-decoration: none;
-  color: #3a4646;
+  color: RGB(118, 114, 90);
   font-size: 16px;
   font-weight: bold;
 }
@@ -145,19 +142,25 @@ header .header__container .header__body__container .header__text {
   width: 55%;
 }
 header .header__container .header__body__container .header__text .first__text {
-  width: 100%;
+  width: 90%;
   font-size: 20px;
   text-align: left;
   color: #91769b;
+  margin: 0 auto;
+  line-height: 1.3em;
 }
 header .header__container .title__footer {
   width: 100%;
   height: auto;
+  position: relative;
+  top: -30px;
 }
 header .header__container .title__footer p {
+  color: #e9571c;
   margin: 0 auto;
   width: 40%;
   text-align: center;
+  font-size: 22px;
 }
 
 #projects {
@@ -165,6 +168,7 @@ header .header__container .title__footer p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  padding-bottom: 40px;
 }
 #projects .projects__container {
   width: 100%;
@@ -177,6 +181,7 @@ header .header__container .title__footer p {
   font-family: Recoleta, cursive;
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 30px;
   color: #91769b;
 }
 #projects .projects__container .projects__img__container {
@@ -188,14 +193,13 @@ header .header__container .title__footer p {
   padding: 20px;
 }
 #projects .projects__container .projects__img__container .projects__img {
-  width: 60%;
+  width: 100%;
   height: 100%;
   padding: 5px;
 }
 #projects .projects__container .projects__img__container .projects__img .foto {
   width: 100%;
   height: 100%;
-  transition: ease-in-out 0.3s;
   cursor: pointer;
 }
 #projects .projects__button__container {
@@ -214,13 +218,13 @@ header .header__container .title__footer p {
   background-color: rgba(56, 158, 119, 0.14);
 }
 #projects .projects__button__container .projects__button a {
-  text-decoration: none;
   color: #91769b;
   font-weight: bold;
 }
 
 #aboutme {
-  padding: 20px;
+  padding: 50px;
+  margin-bottom: 50px;
 }
 #aboutme .aboutme__container {
   width: 80%;
@@ -235,32 +239,33 @@ header .header__container .title__footer p {
   height: 100%;
 }
 #aboutme .aboutme__container .aboutme__img__container img {
-  width: 80%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
-  border-radius: 5px;
 }
 #aboutme .aboutme__container .aboutme__body__container {
-  width: 30%;
+  width: 35%;
   height: auto;
 }
 #aboutme .aboutme__container .aboutme__body__container .title {
   font-size: 20px;
   color: #e9571c;
+  font-weight: bold;
   margin-bottom: 50px;
 }
 #aboutme .aboutme__container .aboutme__body__container .text {
   margin-bottom: 40px;
-  color: black;
+  color: #91769b;
 }
 #aboutme .aboutme__container .aboutme__body__container .aboutme__button {
-  padding: 12px;
-  background: transparent;
-  border-radius: 20px;
-  border-color: beige;
-  color: black;
-  cursor: pointer;
+  padding: 10px;
+  border-color: #91769b;
+  border-radius: 10px;
+  background-color: transparent;
+}
+#aboutme .aboutme__container .aboutme__body__container .aboutme__button a {
+  color: #91769b;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
