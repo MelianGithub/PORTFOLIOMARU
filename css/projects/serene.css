@@ -1,22 +1,42 @@
+@font-face {
+  font-family: RecoletaMed;
+  src: url(../../fonts/Recoleta/Recoleta-Medium.ttf);
+}
+@font-face {
+  font-family: RecoletaBold;
+  src: url(../../fonts/Recoleta/Recoleta-Bold.ttf);
+}
+@font-face {
+  font-family: ProxiamReg;
+  src: url(../../fonts/proxiam/ProxiamReg.ttf);
+}
+@font-face {
+  font-family: ProxiamBold;
+  src: url(../../fonts/proxiam/ProxiamBold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Proxiam, sans-serif;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  font-family: ProxiamBold;
 }
 
 button {
   cursor: pointer;
 }
 
+p {
+  font-family: ProxiamReg;
+}
+
 .navbar__container {
   display: flex;
-  width: 80%;
+  width: 90%;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -43,8 +63,6 @@ button {
   list-style: none;
 }
 .navbar__container .nav li a {
-  cursor: pointer;
-  text-decoration: none;
   color: RGB(118, 114, 90);
   font-size: 16px;
   font-weight: bold;
@@ -75,16 +93,20 @@ button {
 #footer .footer__container .social__container {
   margin-bottom: 10px;
   vertical-align: middle;
+  text-align: center;
+  margin-left: 40px;
 }
 #footer .footer__container .social__container a {
+  text-align: center;
   color: #c8b3ce;
 }
 #footer .footer__container .social__container i {
   font-size: 30px;
   letter-spacing: 20px;
-  cursor: pointer;
 }
 #footer .footer__container .copyRight {
+  text-align: center;
+  align-items: center;
   padding-bottom: 30px;
   font-size: 19px;
   font-family: Proxima;

@@ -1,22 +1,42 @@
+@font-face {
+  font-family: RecoletaMed;
+  src: url(../../fonts/Recoleta/Recoleta-Medium.ttf);
+}
+@font-face {
+  font-family: RecoletaBold;
+  src: url(../../fonts/Recoleta/Recoleta-Bold.ttf);
+}
+@font-face {
+  font-family: ProxiamReg;
+  src: url(../../fonts/proxiam/ProxiamReg.ttf);
+}
+@font-face {
+  font-family: ProxiamBold;
+  src: url(../../fonts/proxiam/ProxiamBold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Proxiam, sans-serif;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  font-family: ProxiamBold;
 }
 
 button {
   cursor: pointer;
 }
 
+p {
+  font-family: ProxiamReg;
+}
+
 .navbar__container {
   display: flex;
-  width: 80%;
+  width: 90%;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -43,8 +63,6 @@ button {
   list-style: none;
 }
 .navbar__container .nav li a {
-  cursor: pointer;
-  text-decoration: none;
   color: RGB(118, 114, 90);
   font-size: 16px;
   font-weight: bold;
@@ -75,16 +93,20 @@ button {
 #footer .footer__container .social__container {
   margin-bottom: 10px;
   vertical-align: middle;
+  text-align: center;
+  margin-left: 40px;
 }
 #footer .footer__container .social__container a {
+  text-align: center;
   color: #c8b3ce;
 }
 #footer .footer__container .social__container i {
   font-size: 30px;
   letter-spacing: 20px;
-  cursor: pointer;
 }
 #footer .footer__container .copyRight {
+  text-align: center;
+  align-items: center;
   padding-bottom: 30px;
   font-size: 19px;
   font-family: Proxima;
@@ -92,73 +114,87 @@ button {
   color: #999;
 }
 
-@font-face {
-  font-family: Recoleta;
-  src: url(../fonts/Recoleta-Regular.ttf);
-}
-@font-face {
-  font-family: Proxiam;
-  src: url(../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
-}
-@font-face {
-  font-family: Proxiam;
-  src: url(../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
-}
 body {
   background-image: url("../img/fondoabout.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: auto;
 }
 body .aboutme__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
-  height: auto;
+  width: 80%;
+  height: 200vh;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 40px;
 }
 body .aboutme__container .design__container {
   display: flex;
-  width: 100%;
+  align-items: center;
+  width: 90%;
   height: 100%;
-  margin-bottom: 50px;
 }
 body .aboutme__container .design__container .design__foto__container {
-  width: 60%;
+  width: 80%;
 }
 body .aboutme__container .design__container .design__foto__container img {
   width: 100%;
+  border-radius: 5%;
+}
+body .aboutme__container .design__container .design__foto__container .star {
+  width: 100px;
+  transform: rotate(280deg);
+  position: relative;
+  top: -75px;
+  left: -45px;
+  z-index: 1;
 }
 body .aboutme__container .design__container .design__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
-  margin-left: 50px;
+  height: 100%;
+  padding: 50px;
+  font-family: RecoletaMed;
 }
-body .aboutme__container .design__container .design__text__container .title_ds {
+body .aboutme__container .design__container .design__text__container .title__ds {
+  font-size: 30px;
+  width: 100%;
+  height: 20%;
   color: red;
 }
-body .aboutme__container .segundo {
+body .aboutme__container .design__container .design__text__container .text__design {
+  margin-bottom: 30px;
+}
+body .aboutme__container .design__container .design__text__container .text__design p {
+  margin-bottom: 30px;
+  font-size: 19px;
+  line-height: 120%;
+}
+body .aboutme__container .reverse {
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: row-reverse;
 }
-body .aboutme__container .segundo .foto__segundo {
-  width: 60%;
-}
-body .aboutme__container .segundo .foto__segundo img {
-  width: 100%;
-}
-body .aboutme__container .segundo .texto__segundo {
-  width: 80%;
-  margin-right: 50px;
+body .aboutme__container .relative {
+  position: relative;
+  top: -50px;
 }
 body .aboutme__container .button__container {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 body .aboutme__container .button__container button {
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 10px;
+  border-color: #91769b;
+  color: #91769b;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=aboutme.css.map */
