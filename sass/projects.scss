@@ -14,13 +14,17 @@ html {
         align-items: center;
         width: 100%;
         height: auto;
+        margin-bottom: 200px;
 
         .title__projects {
             width: 60%;
+            height: auto;
             text-align: center;
-            margin: 40px;
-            padding: 20px;
-            color: red;
+            margin: 50px 0px 120px 0px;
+            padding: 40px;
+            color: #e9571c;
+            font-family: RecoletaBold;
+
         }
 
         .img__projects__container {
@@ -30,7 +34,6 @@ html {
             align-items: center;
             width: 100%;
             height: 100%;
-            margin-bottom: 20px;
 
 
             .primero {
@@ -38,19 +41,49 @@ html {
                 width: 80%;
                 height: auto;
 
-                .img__wrapp {
+                .card {
                     width: 100%;
-                    margin: 2px;
+                    margin: 5px;
+                    overflow: hidden;
+                    position: relative;
+
+                    &:hover .info {
+                        bottom: 0;
+                    }
 
                     img {
                         width: 100%;
-                        height: 400px;
+                        height: 100%;
                         object-fit: cover;
-                        object-position: center
-                       
+
+                    }
+
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        transition: 1s;
+                        bottom: -100%;
+                        right: 0;
+                        background-color: #1f3d4738;
+                        backdrop-filter: blur(5px);
+                        color: white;
+                        padding: 30px;
+                        text-align: center;
+                        
+
+                        h2{
+                            width: 100%;
+                            height: 30px;
+                        }
                     }
                 }
-                .half{
+
+                .half {
                     width: 50%;
                 }
             }
