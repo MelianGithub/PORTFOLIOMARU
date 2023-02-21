@@ -90,6 +90,7 @@ header {
     .projects__container {
 
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -107,25 +108,35 @@ header {
 
         .projects__img__container {
             width: 80%;
-            height: 80%;
+            height: 80vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             padding: 20px;
 
 
+
             .projects__img {
-                width: 100%;
-                height: 100%;
-                padding: 5px;
+                width: 33%;
+                height: 80%;
+                
+                padding: 10px;
+                box-sizing: border-box;
 
 
-                .foto {
-                    width: 100%;
-                    height: 100%;
-                    cursor: pointer;
+                a {
 
+                    .foto {
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        border-radius: 10px;
+                        object-fit: cover;
+
+                    }
                 }
+
+
             }
         }
     }
@@ -136,20 +147,15 @@ header {
 
         .projects__button {
             padding: 10px;
-            border-color: #91769b;
+            border: 1px solid #91769b;
             border-radius: 10px;
             background-color: transparent;
-            cursor: pointer;
             transition: ease-out .5s;
 
             &:hover {
                 background-color: rgba(56, 158, 119, 0.14);
             }
 
-            a {
-                color: #91769b;
-                font-weight: bold;
-            }
         }
     }
 
@@ -175,6 +181,7 @@ header {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 10px;
             }
         }
 
@@ -188,8 +195,8 @@ header {
                 color: #e9571c;
                 font-family: RecoletaMed;
                 margin-bottom: 50px;
-                font-weight:lighter;
-                
+                font-weight: lighter;
+
             }
 
             .text {
@@ -201,7 +208,7 @@ header {
             .aboutme__button {
                 padding: 10px;
                 border-color: #91769b;
-                border-radius: 10px;
+                border-radius: 5%;
                 background-color: transparent;
 
 

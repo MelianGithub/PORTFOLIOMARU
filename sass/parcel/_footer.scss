@@ -1,6 +1,6 @@
 #footer {
    
-    background-color: #f7f1f7;
+    background-color: #f7f1f1;
 
     .footer__container {
         width: 100%;
@@ -23,7 +23,7 @@
 
         .social__container {
             
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             vertical-align: middle;
             text-align: center;
             margin-left: 40px;
@@ -31,12 +31,18 @@
             a{
                 text-align: center;
                 color: #c8b3ce;
+
+                 &:hover{
+                    color: #e9571c;
+                }
+
+                
             }
 
             i{
                 font-size: 30px;
                 letter-spacing: 20px;
-                
+
                
             }
         }
