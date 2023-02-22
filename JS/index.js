@@ -17,7 +17,7 @@ function cambiarImagen(elemento, listaImagenes) {
     elemento.addEventListener("mouseover", () => {
         if (!intervalo) {
             cambiarFoto();
-            intervalo = setInterval(cambiarFoto, 1200);
+            intervalo = setInterval(cambiarFoto, 500);
         }
 
     });

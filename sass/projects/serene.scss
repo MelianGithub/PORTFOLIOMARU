@@ -1,17 +1,4 @@
-@use '../parcel/forprojects';
+@use '../parcel/reset';
 @use '../parcel/navbar';
-
-@font-face {
-    font-family: Recoleta;
-    src: url(../../fonts/Recoleta/Recoleta-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: Proxiam;
-    src: url(../../fonts/proxiam/proxima-reg/ProximaNova-Regular.otf);
-  }
-  
-  @font-face {
-    font-family: Proxiam;
-    src: url(../../fonts/proxiam/proxima-bold/ProximaNovaBold.otf);
-  }
+@use '../parcel/footer';
+@use '../parcel/forprojects'

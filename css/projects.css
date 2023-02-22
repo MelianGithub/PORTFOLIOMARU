@@ -66,13 +66,25 @@ p {
   color: RGB(118, 114, 90);
   font-size: 16px;
   font-weight: bold;
+  position: relative;
 }
-.navbar__container .nav li a:hover {
+.navbar__container .nav li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
   border-bottom: 3px solid white;
+  left: 0;
+  bottom: -2px;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+}
+.navbar__container .nav li a:hover::after {
+  transform: scale(1, 1);
+  transition: transform 0.3s ease;
 }
 
 #footer {
-  background-color: #f7f1f7;
+  background-color: #f7f1f1;
 }
 #footer .footer__container {
   width: 100%;
@@ -91,7 +103,7 @@ p {
   top: -30px;
 }
 #footer .footer__container .social__container {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   vertical-align: middle;
   text-align: center;
   margin-left: 40px;
@@ -99,6 +111,9 @@ p {
 #footer .footer__container .social__container a {
   text-align: center;
   color: #c8b3ce;
+}
+#footer .footer__container .social__container a:hover {
+  color: #e9571c;
 }
 #footer .footer__container .social__container i {
   font-size: 30px;
@@ -128,13 +143,14 @@ html .projects__container {
   margin-bottom: 200px;
 }
 html .projects__container .title__projects {
-  width: 60%;
+  max-width: 43%;
   height: auto;
   text-align: center;
-  margin: 50px 0px 120px 0px;
-  padding: 40px;
+  margin: 100px 0px 40px 0px;
+  padding: 30px;
   color: #e9571c;
   font-family: RecoletaBold;
+  font-size: 25px;
 }
 html .projects__container .img__projects__container {
   padding: 20px;
@@ -162,6 +178,8 @@ html .projects__container .img__projects__container .primero .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
+  cursor: none;
 }
 html .projects__container .img__projects__container .primero .card .info {
   display: flex;
@@ -179,6 +197,13 @@ html .projects__container .img__projects__container .primero .card .info {
   color: white;
   padding: 30px;
   text-align: center;
+  font-family: ProxiamReg;
+  font-size: 16px;
+  border-radius: 10px;
+}
+html .projects__container .img__projects__container .primero .card .info a {
+  color: white;
+  cursor: pointer;
 }
 html .projects__container .img__projects__container .primero .card .info h2 {
   width: 100%;

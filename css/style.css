@@ -14,6 +14,10 @@
   font-family: ProxiamBold;
   src: url(../../fonts/proxiam/ProxiamBold.ttf);
 }
+@font-face {
+  font-family: ProxiamAltReg;
+  src: url(../../fonts/proxiam/ProximaNovaA-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -236,11 +240,14 @@ header .header__container .title__footer p {
   margin-bottom: 50px;
 }
 #projects .projects__button__container .projects__button {
-  padding: 10px;
-  border: 1px solid #91769b;
-  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #91769b;
+  border-radius: 15px;
   background-color: transparent;
   transition: ease-out 0.5s;
+  font-family: ProxiamBold;
+  font-size: 16px;
+  color: #91769b;
 }
 #projects .projects__button__container .projects__button:hover {
   background-color: rgba(56, 158, 119, 0.14);
@@ -283,16 +290,20 @@ header .header__container .title__footer p {
   margin-bottom: 40px;
   color: #91769b;
   line-height: 120%;
+  font-size: 19px;
 }
 #aboutme .aboutme__container .aboutme__body__container .aboutme__button {
-  padding: 10px;
-  border-color: #91769b;
-  border-radius: 5%;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #91769b;
+  border-radius: 15px;
   background-color: transparent;
-}
-#aboutme .aboutme__container .aboutme__body__container .aboutme__button a {
+  transition: ease-out 0.5s;
+  font-family: ProxiamBold;
+  font-size: 16px;
   color: #91769b;
-  font-weight: bold;
+}
+#aboutme .aboutme__container .aboutme__body__container .aboutme__button:hover {
+  background-color: rgba(56, 158, 119, 0.14);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -97,12 +97,13 @@ body {
 
       button {
         padding: 10px 20px 10px 20px;
+        border: 2px solid #91769b;
+        border-radius: 15px;
         background-color: transparent;
-        width: 100%;
-        border-radius: 10px;
-        border-color: #91769b;
+        transition: ease-out .5s;
+        font-family: ProxiamBold;
+        font-size: 16px;
         color: #91769b;
-        font-weight: bold;
       }
     }
   }
