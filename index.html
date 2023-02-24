@@ -14,17 +14,20 @@
 
 <body>
     <header>
-        <nav id="Home" class="navbar__container">
-            <ul class="nav">
-                <li><a href="#Home">HOME</a> </li>
-                <li><a href="./paginas/aboutme.html">ABOUT</a> </li>
+        <nav id="home" class="navbar__container">
+            <div class="openMenu">
 
-                <div class="logo__wrapper"">
-                        <a href=" ./index.html"><img class="img__logo" src="./img/logoheader.png" alt=""></a>
-                </div>
+                <img class="img__logo__resp" src="./img/logoheader.png" alt="">
+                <button id="opcl"><i class='bx bx-menu'></i></button>
+            </div>
 
-                <li><a href="./paginas/projects.html">PROJECTS</a> </li>
-                <li><a href="./paginas/contactme.html">CONTACT</a> </li>
+            <ul class="nav__list" id="navi">
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="./paginas/aboutme.html">ABOUT</a></li>
+                <li id="logo" class="logo__wrapper"><a href="./index.html"><img class="img__logo"
+                            src="./img/logoheader.png" alt=""></a></li>
+                <li><a href="./paginas/projects.html">PROJECTS</a></li>
+                <li><a href="./paginas/contactme.html">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -47,12 +50,11 @@
                 </div>
 
                 <div class="title__footer">
-                    <div>
-                        <p class="title__text2">At Marula Design, we create brands that elevate your business, ensure
-                            that
-                            you stand out, and establish meaningful connections with your clients. Our strategy-oriented
-                            designs show the soul of your company and promote sustainable growth.</p>
-                    </div>
+                    <p>At Marula Design, we create brands that elevate your business, ensure
+                        that
+                        you stand out, and establish meaningful connections with your clients. Our strategy-oriented
+                        designs show the soul of your company and promote sustainable growth.</p>
+
                 </div>
             </div>
         </section>
@@ -67,12 +69,12 @@
                 <div class="projects__img__container">
 
 
-                    <div  class=" projects__img"><a href="./paginas/projects/candl.html"><img
-                                class="foto" src="./img/candl/candl1.png" alt="" id="candl" ></a></div>
+                    <div class=" projects__img"><a href="./paginas/projects/candl.html"><img class="foto"
+                                src="./img/candl/candl1.png" alt="" id="candl"></a></div>
 
 
                     <div class="projects__img"><a href="./paginas/projects/agoodboy.html"><img class="foto"
-                                src="./img/agoodboy/2fotosinicio.png" alt="" id="agoodboy" ></a></div>
+                                src="./img/agoodboy/2fotosinicio.png" alt="" id="agoodboy"></a></div>
 
 
 
@@ -127,6 +129,7 @@
             </div>
         </div>
     </footer>
+    <script src="./JS/navBar.js"></script>
     <script src="./JS/index.js"></script>
 </body>
 

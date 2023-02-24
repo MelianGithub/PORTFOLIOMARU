@@ -5,24 +5,94 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    content: "";
     z-index: 1;
 
+    @media screen and (max-width:700px) {
 
-    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+
+
+
+
+        .img__logo__resp {
+            width: 250px;
+        }
+    }
+
+    .openMenu {
+
+        display: none;
+
+        button {
+            border: none;
+            width: 40px;
+            font-size: 40px;
+            background-color: transparent;
+
+        }
+
+        @media screen and (max-width:700px) {
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+    }
+
+
+    .nav__list {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding-top: 10px;
 
+
+
+        @media screen and (max-width:700px) {
+
+            visibility: hidden;
+
+            //este es el que tiene que camibar para que aparezca cuando hago click en abrir
+            flex-direction: column;
+            align-items: end;
+            gap: 2rem;
+
+
+
+        }
+
+
         .logo__wrapper {
-            width: 200px;
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width:700px) {
+                display: none;
+
+            }
+
 
             .img__logo {
                 max-width: 100%;
                 min-width: 200px;
                 padding: 20px;
+
+                @media screen and (max-width:700px) {}
             }
         }
 
@@ -30,13 +100,14 @@
 
             list-style: none;
 
+            
 
             a {
                 color: RGB(118, 114, 90);
                 font-size: 16px;
                 font-weight: bold;
                 position: relative;
-                
+
 
                 &::after {
                     content: "";
@@ -47,25 +118,26 @@
                     bottom: -2px;
                     transform: scale(0, 1);
                     transform-origin: 0% 100%;
-                    
+
                 }
 
-                &:hover::after{
+                &:hover::after {
                     transform: scale(1, 1);
                     transition: transform 0.3s ease;
                 }
 
-                
+
 
             }
 
-            // &:hover {
 
-
-            // }
 
         }
 
     }
 
+    .visible {
+        visibility: visible;
+
+    }
 }
