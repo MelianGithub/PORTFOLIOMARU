@@ -14,17 +14,20 @@
 
 <body>
     <header>
-        <nav id="Home" class="navbar__container">
-            <ul class="nav">
-                <li><a href="../index.html">HOME</a> </li>
-                <li><a href="../paginas/aboutme.html">ABOUT</a> </li>
+        <nav id="home" class="navbar__container">
+            <div class="openMenu">
 
-                <div class="logo__wrapper">
-                    <a href="../index.html"><img class="img__logo" src="../img/logoheader.png" alt=""></a>
-                </div>
+                <a class="img__logo__resp" href="../index.html"><img class="img__logo__resp" src="../img/logoheader.png" alt=""></a>
+                <button id="opcl"><i class='bx bx-menu'></i></button>
+            </div>
 
-                <li><a href="../paginas/projects.html">PROJECTS</a> </li>
-                <li><a href="../paginas/contactme.html">CONTACT</a> </li>
+            <ul class="nav__list" id="navi">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../paginas/aboutme.html">ABOUT</a></li>
+                <li id="logo" class="logo__wrapper"><a class="logo-link" href="../index.html"><img class="img__logo"
+                            src="../img/logoheader.png" alt=""></a></li>
+                <li><a href="../paginas/projects.html">PROJECTS</a></li>
+                <li><a href="../paginas/contactme.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -42,25 +45,26 @@
             </div>
 
             <div class="form__contaiener">
-                <form>
-                    <label for="">Name*</label>
-                    <input type="text" name="" id="name">
+                <form id="form" action="https://formsubmit.co/e_melian04@hotmail.com" method="POST">
+                    <label for="name">Name*</label>
+                    <input type="text" required name="name" id="name">
 
-                    <label for="">Email*</label>
-                    <input type="email" name="" id="">
+                    <label for="email">Email*</label>
+                    <input type="email" required name="email" id="email">
 
-                    <label for="">Business Name*</label>
-                    <input type="text" name="" id="">
+                    <label for="business">Business Name*</label>
+                    <input type="text"  name="business" id="business">
 
-                    <label for="">Where are you based?*</label>
-                    <input type="text" name="" id="">
+                    <label for="where">Where are you based?*</label>
+                    <input type="text"  name="where" id="where">
 
 
 
-                    <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="message" required id="message" cols="30" rows="10"></textarea>
 
                     <input class="input__submit" type="submit" value="SUBMIT">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/paginas/aboutme.html">
                 </form>
             </div>
 
@@ -87,6 +91,7 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/navBar.js"></script>
 </body>
 
 </html>
