@@ -13,25 +13,42 @@ body {
   height: auto;
 
 
+
   .aboutme__container {
 
     display: flex;
     flex-direction: column;
+    background-color: transparent;
     align-items: center;
     width: 80%;
-    height: 200vh;
+    height: 100%;
     margin: 0 auto;
-    padding: 40px;
+
 
     .design__container {
       display: flex;
+      justify-content: center;
       align-items: center;
       width: 90%;
       height: 100%;
+      margin-top: 150px;
+
+
+      @media screen and (max-width:700px) {
+        flex-direction: column-reverse;
+        gap: 10px;
+        width: 100%;
+
+      }
 
 
       .design__foto__container {
         width: 80%;
+
+        @media screen and (max-width:700px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
 
         img {
           width: 100%;
@@ -53,10 +70,18 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 40px;
         width: 80%;
         height: 100%;
         padding: 50px;
         font-family: RecoletaMed;
+
+        @media screen and (max-width:700px) {
+
+          width: 100%;
+          padding: 0;
+
+        }
 
         .title__ds {
           font-size: 30px;
@@ -68,9 +93,15 @@ body {
         .text__design {
           margin-bottom: 30px;
 
+          @media screen and (max-width:700px) {
+
+            margin-bottom: 0;
+
+          }
+
           p {
-            margin-bottom: 30px;
-            font-size: 19px;
+            margin-bottom: 20px;
+            font-size: clamp(1rem, 2vw, 1.2rem);
             line-height: 120%;
           }
 
@@ -83,17 +114,26 @@ body {
     .reverse {
       display: flex;
       flex-direction: row-reverse;
+      margin-top: 50px;
+
+      @media screen and (max-width:700px) {
+        flex-direction: column-reverse;
+      }
     }
 
     .relative {
       position: relative;
       top: -50px;
-      
+
     }
 
     .button__container {
       margin-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
+
+      @media screen and (max-width:700px) {
+        margin-top: 0;
+      }
 
       button {
         padding: 10px 20px 10px 20px;
@@ -104,6 +144,11 @@ body {
         font-family: ProxiamBold;
         font-size: 16px;
         color: #91769b;
+
+        &:hover {
+          background-color: #91769b;
+          color: antiquewhite;
+        }
       }
     }
   }

@@ -17,14 +17,22 @@ html {
         margin-bottom: 200px;
 
         .title__projects {
-            max-width: 43%;
+            max-width: 100%;
             height: auto;
             text-align: center;
             margin: 100px 0px 40px 0px;
             padding: 30px;
             color: #e9571c;
             font-family: RecoletaBold;
-            font-size: 25px;
+            font-size: clamp(0.7rem, 2vw, 1.5rem);
+
+            span{
+                display: block;
+            }
+
+            @media screen and (max-width:500px){
+                
+            }
         }
 
         .img__projects__container {

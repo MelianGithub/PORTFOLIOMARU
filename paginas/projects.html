@@ -14,26 +14,30 @@
 
 <body>
     <header>
-        <nav id="Home" class="navbar__container">
-            <ul class="nav">
-                <li><a href="../index.html">HOME</a> </li>
-                <li><a href="../paginas/aboutme.html">ABOUT</a> </li>
+        <header>
+            <nav id="home" class="navbar__container">
+                <div class="openMenu">
 
-                <div class="logo__wrapper">
-                    <a href="../index.html"><img class="img__logo" src="../img/logoheader.png" alt=""></a>
+                    <img class="img__logo__resp" src="../img/logoheader.png" alt="">
+                    <button id="opcl"><i class='bx bx-menu'></i></button>
                 </div>
 
-                <li><a href="../paginas/projects.html">PROJECTS</a> </li>
-                <li><a href="../paginas/contactme.html">CONTACT</a> </li>
-            </ul>
-        </nav>
+                <ul class="nav__list" id="navi">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../paginas/aboutme.html">ABOUT</a></li>
+                    <li id="logo" class="logo__wrapper"><a href="../index.html"><img class="img__logo"
+                                src="../img/logoheader.png" alt=""></a></li>
+                    <li><a href="../paginas/projects.html">PROJECTS</a></li>
+                    <li><a href="../paginas/contactme.html">CONTACT</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main>
 
         <div class="projects__container">
             <div class="title__projects">
-                <h1>I SHOW YOU SOME OF MY PROJECTS!</h1>
+                <h1>I SHOW YOU SOME OF <span>MY PROJECTS!</span></h1>
             </div>
 
             <div class="img__projects__container">
@@ -125,6 +129,7 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/navBar.js"></script>
 </body>
 
 </html>

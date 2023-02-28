@@ -11,7 +11,7 @@ header {
     background-position: bottom;
     background-repeat: no-repeat;
 
-    
+
 
     #header {
         .header__container {
@@ -22,7 +22,7 @@ header {
             justify-content: space-between;
             align-items: center;
 
-            
+
             @media screen and (max-width:700px) {
                 top: 50px;
             }
@@ -35,13 +35,14 @@ header {
                 align-items: center;
                 text-align: center;
 
-               
+
 
 
                 @media screen and (max-width:500px) {
                     flex-direction: column;
                     justify-content: center;
                     gap: 30px;
+                    margin-top: 30px;
                 }
 
 
@@ -50,7 +51,8 @@ header {
                     width: 35%;
 
                     @media screen and (max-width:700px) {
-                        width: 45%
+                        width: 60%;
+                        margin-bottom: 30px;
                     }
 
                     img {
@@ -65,14 +67,22 @@ header {
                 .header__text {
                     width: 50%;
 
+                    @media screen and (max-width:500px) {
+                        width: 100%;
+                    }
+
                     .first__text {
                         width: 85%;
-                        font-size: calc(1vw + .4em);
+                        font-size: clamp(0.5rem, 2vw, 1.3rem);
                         text-align: left;
                         color: #91769b;
                         margin: 0 auto;
                         line-height: 1.3em;
 
+                        @media screen and (max-width:500px) {
+                            width: 100%;
+                            font-size: calc(1vw + 0.8em);
+                        }
                     }
                 }
             }
@@ -83,7 +93,9 @@ header {
                 position: relative;
                 top: 90px;
 
-
+                @media screen and (max-width:500px) {
+                    top: 60px;
+                }
 
 
                 p {
@@ -93,6 +105,12 @@ header {
                     text-align: center;
                     font-size: calc(1vw + .5em);
                     line-height: 120%;
+
+                    @media screen and (max-width:500px) {
+                        width: 87%;
+                        font-size: calc(1vw + .8em);
+                        text-align: left;
+                    }
                 }
             }
         }
@@ -109,21 +127,29 @@ header {
     background-size: cover;
     background-position: bottom;
     padding-bottom: 40px;
+    width: 100%;
+    height: 110vh;
 
     .projects__container {
 
         width: 100%;
-        height: auto;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
 
+        @media screen and (max-width:700px) {
+                
+            width: 100%;
+            height: auto;
+        }
 
 
         .projects__title {
             font-family: RecoletaBold;
-            font-size: 30px;
+            font-size: clamp(1rem, 2vw, 2rem);
             margin-bottom: 30px;
             color: #91769b;
 
@@ -135,16 +161,33 @@ header {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            flex-wrap: wrap;
             padding: 20px;
+            
 
-
+            @media screen and (max-width:700px) {
+                
+                width: 100%;
+                height: 80vh;
+                overflow: scroll;
+                padding: 0;
+            }
 
             .projects__img {
-                width: 33%;
+                
+                width: 50%;
                 height: 80%;
-
                 padding: 10px;
                 box-sizing: border-box;
+
+                @media screen and (max-width:700px) {
+                
+                    width: 70%;
+                    height: 50%;
+                    padding: 10px 0px 10px 0px;
+                    
+                    
+                } 
 
 
                 a {
@@ -155,38 +198,43 @@ header {
                         cursor: pointer;
                         border-radius: 10px;
                         object-fit: cover;
+                        
 
                     }
                 }
 
 
             }
+     
         }
-    }
 
-    .projects__button__container {
-        margin-top: 40px;
-        margin-bottom: 50px;
-
-        .projects__button {
-            padding: 10px 20px 10px 20px;
-            border: 2px solid #91769b;
-            border-radius: 15px;
-            background-color: transparent;
-            transition: ease-out .5s;
-            font-family: ProxiamBold;
-            font-size: 16px;
-            color: #91769b;
-            ;
-
-            &:hover {
-                background-color: rgba(56, 158, 119, 0.14);
+        .projects__button__container {
+            margin-top: 40px;
+            margin-bottom: 50px;
+    
+            .projects__button {
+                padding: 10px 20px 10px 20px;
+                border: 2px solid #91769b;
+                border-radius: 15px;
+                background-color: transparent;
+                transition: ease-out .5s;
+                font-family: ProxiamBold;
+                font-size: 16px;
+                color: #91769b;
+                ;
+    
+                &:hover {
+                    background-color: rgba(56, 158, 119, 0.14);
+                }
+                
+    
             }
-
         }
+    
+    }
     }
 
-}
+   
 
 #aboutme {
     padding: 50px;
@@ -199,10 +247,27 @@ header {
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        
+        
+
+        @media screen and (max-width:700px) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            gap: 1rem;
+        }
 
         .aboutme__img__container {
             width: 40%;
             height: 100%;
+
+            @media screen and (max-width:700px) {
+                width: 100%;
+                height: auto;
+                
+            }
 
             img {
                 width: 100%;
@@ -215,10 +280,15 @@ header {
         .aboutme__body__container {
             width: 40%;
             height: auto;
-
+            
+            @media screen and (max-width:700px) {
+                width: 100%;
+                height: auto;
+                
+            }
 
             .title {
-                font-size: 30px;
+                font-size: clamp(1rem, 2vw, 2rem);
                 color: #e9571c;
                 font-family: RecoletaMed;
                 margin-bottom: 50px;
@@ -230,7 +300,7 @@ header {
                 margin-bottom: 40px;
                 color: #91769b;
                 line-height: 120%;
-                font-size: 19px;
+                font-size: clamp(1rem, 2vw, 2rem);
             }
 
             .aboutme__button {

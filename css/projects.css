@@ -14,6 +14,10 @@
   font-family: ProxiamBold;
   src: url(../../fonts/proxiam/ProxiamBold.ttf);
 }
+@font-face {
+  font-family: ProxiamAltReg;
+  src: url(../../fonts/proxiam/ProximaNovaA-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -35,40 +39,87 @@ p {
 }
 
 .navbar__container {
-  display: flex;
-  width: 90%;
+  width: 100%;
   height: auto;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  content: "";
   z-index: 1;
 }
-.navbar__container .nav {
+@media screen and (max-width: 700px) {
+  .navbar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .navbar__container .img__logo__resp {
+    width: 250px;
+  }
+}
+.navbar__container .openMenu {
+  display: none;
+}
+.navbar__container .openMenu button {
+  border: none;
+  width: 40px;
+  font-size: 40px;
+  background-color: transparent;
+}
+@media screen and (max-width: 700px) {
+  .navbar__container .openMenu {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.navbar__container .nav__list {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 10px;
 }
-.navbar__container .nav .logo__wrapper {
-  width: 200px;
+@media screen and (max-width: 700px) {
+  .navbar__container .nav__list {
+    visibility: hidden;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+  }
 }
-.navbar__container .nav .logo__wrapper .img__logo {
+.navbar__container .nav__list .logo__wrapper {
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .navbar__container .nav__list .logo__wrapper {
+    display: none;
+  }
+}
+.navbar__container .nav__list .logo__wrapper .img__logo {
   max-width: 100%;
   min-width: 200px;
   padding: 20px;
 }
-.navbar__container .nav li {
+.navbar__container .nav__list li {
   list-style: none;
 }
-.navbar__container .nav li a {
+.navbar__container .nav__list li a {
   color: RGB(118, 114, 90);
   font-size: 16px;
   font-weight: bold;
   position: relative;
 }
-.navbar__container .nav li a::after {
+.navbar__container .nav__list li a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -78,9 +129,12 @@ p {
   transform: scale(0, 1);
   transform-origin: 0% 100%;
 }
-.navbar__container .nav li a:hover::after {
+.navbar__container .nav__list li a:hover::after {
   transform: scale(1, 1);
   transition: transform 0.3s ease;
+}
+.navbar__container .visible {
+  visibility: visible;
 }
 
 #footer {
@@ -96,6 +150,11 @@ p {
 }
 #footer .footer__container .logo__footer__container {
   width: 10%;
+}
+@media screen and (max-width: 700px) {
+  #footer .footer__container .logo__footer__container {
+    width: 20%;
+  }
 }
 #footer .footer__container .logo__footer__container .logo__footer {
   width: 100%;
@@ -116,14 +175,14 @@ p {
   color: #e9571c;
 }
 #footer .footer__container .social__container i {
-  font-size: 30px;
+  font-size: 1.9rem;
   letter-spacing: 20px;
 }
-#footer .footer__container .copyRight {
+#footer .footer__container .copyRight p {
   text-align: center;
   align-items: center;
   padding-bottom: 30px;
-  font-size: 19px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-family: Proxima;
   font-style: italic;
   color: #999;
@@ -143,14 +202,17 @@ html .projects__container {
   margin-bottom: 200px;
 }
 html .projects__container .title__projects {
-  max-width: 43%;
+  max-width: 100%;
   height: auto;
   text-align: center;
   margin: 100px 0px 40px 0px;
   padding: 30px;
   color: #e9571c;
   font-family: RecoletaBold;
-  font-size: 25px;
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
+}
+html .projects__container .title__projects span {
+  display: block;
 }
 html .projects__container .img__projects__container {
   padding: 20px;

@@ -17,17 +17,20 @@
 <body>
     <div class="general__container">
         <header>
-            <nav id="Home" class="navbar__container">
-                <ul class="nav">
-                    <li><a href="../index.html">HOME</a> </li>
-                    <li><a href="../paginas/aboutme.html">ABOUT</a> </li>
+            <nav id="home" class="navbar__container">
+                <div class="openMenu">
 
-                    <div class="logo__wrapper">
-                        <a href="../index.html"><img class="img__logo" src="../img/logoheader.png" alt=""></a>
-                    </div>
+                    <img class="img__logo__resp" src="../img/logoheader.png" alt="">
+                    <button id="opcl"><i class='bx bx-menu'></i></button>
+                </div>
 
-                    <li><a href="../paginas/projects.html">PROJECTS</a> </li>
-                    <li><a href="../paginas/contactme.html">CONTACT</a> </li>
+                <ul class="nav__list" id="navi">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../paginas/aboutme.html">ABOUT</a></li>
+                    <li id="logo" class="logo__wrapper"><a href="../index.html"><img class="img__logo"
+                                src="../img/logoheader.png" alt=""></a></li>
+                    <li><a href="../paginas/projects.html">PROJECTS</a></li>
+                    <li><a href="../paginas/contactme.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -61,7 +64,8 @@
                 <div class=" design__container reverse">
 
                     <div class="design__foto__container"><img src="../img/marusola.png" alt="">
-                    <img class="star" src="../img/estrellacirculos.png" alt=""></div>
+                        <img class="star" src="../img/estrellacirculos.png" alt="">
+                    </div>
 
                     <div class="design__text__container relative">
                         <div class="title__ds">
@@ -106,5 +110,7 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/navBar.js"></script>
+</body>
 
 </html>

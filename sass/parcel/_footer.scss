@@ -1,5 +1,5 @@
 #footer {
-   
+
     background-color: #f7f1f1;
 
     .footer__container {
@@ -13,48 +13,56 @@
 
         .logo__footer__container {
             width: 10%;
+
+            @media screen and (max-width:700px) {
+                width: 20%;
+            }
+
             .logo__footer {
                 width: 100%;
                 position: relative;
                 top: -30px;
-                
+
             }
         }
 
         .social__container {
-            
+
             margin-bottom: 30px;
             vertical-align: middle;
             text-align: center;
             margin-left: 40px;
-            
-            a{
+
+            a {
                 text-align: center;
                 color: #c8b3ce;
 
-                 &:hover{
+                &:hover {
                     color: #e9571c;
                 }
 
-                
+
             }
 
-            i{
-                font-size: 30px;
+            i {
+                font-size: 1.9rem;
                 letter-spacing: 20px;
 
-               
+
             }
         }
 
         .copyRight {
-            text-align: center;
-            align-items: center;
-            padding-bottom: 30px;
-            font-size: 19px;
-            font-family: Proxima;
-            font-style: italic;
-            color: #999;
+            p {
+                text-align: center;
+                align-items: center;
+                padding-bottom: 30px;
+                font-size: clamp(1rem, 2vw, 1.2rem);
+                font-family: Proxima;
+                font-style: italic;
+                color: #999;
+            }
+
         }
     }
 }

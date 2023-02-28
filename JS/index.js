@@ -13,23 +13,27 @@ cambiarImagen(bonnies, bonniesFotos);
 function cambiarImagen(elemento, listaImagenes) {
     let indice = 0;
     let intervalo;
+    const mediumBp = matchMedia('(max-width:600px)');
 
-    elemento.addEventListener("mouseover", () => {
-        if (!intervalo) {
-            cambiarFoto();
-            intervalo = setInterval(cambiarFoto, 500);
+
+    if (mediumBp.matches !== true) {
+        elemento.addEventListener("mouseover", () => {
+            if (!intervalo) {
+                cambiarFoto();
+                intervalo = setInterval(cambiarFoto, 500);
+            }
+        });
+
+        elemento.addEventListener("mouseout", () => {
+            clearInterval(intervalo);
+            intervalo = null;
+        });
+
+        function cambiarFoto() {
+            indice = (indice + 1) % listaImagenes.length;
+            elemento.src = listaImagenes[indice];
         }
-
-    });
-
-    elemento.addEventListener("mouseout", () => {
-        clearInterval(intervalo);
-        intervalo = null;
-    });
-
-    function cambiarFoto() {
-        indice = (indice + 1) % listaImagenes.length;
-        elemento.src = listaImagenes[indice];
     }
+
 }
 
