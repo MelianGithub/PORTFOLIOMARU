@@ -13,7 +13,7 @@ cambiarImagen(bonnies, bonniesFotos);
 function cambiarImagen(elemento, listaImagenes) {
     let indice = 0;
     let intervalo;
-    const mediumBp = matchMedia('(max-width:600px)');
+    const mediumBp = matchMedia('(max-width:900px)');
 
 
     if (mediumBp.matches !== true) {

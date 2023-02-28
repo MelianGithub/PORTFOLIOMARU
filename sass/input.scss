@@ -138,10 +138,10 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
 
         @media screen and (max-width:700px) {
-                
+
             width: 100%;
             height: auto;
         }
@@ -161,36 +161,45 @@ header {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            flex-wrap: wrap;
             padding: 20px;
-            
 
             @media screen and (max-width:700px) {
-                
+
+                width: 100%;
+                height: 80vh;
+                padding: 5px;
+
+            }
+
+            @media screen and (max-width:500px) {
+                flex-wrap: wrap;
                 width: 100%;
                 height: 80vh;
                 overflow: scroll;
-                padding: 0;
+
             }
 
             .projects__img {
-                
-                width: 50%;
+
+                width: 33%;
                 height: 80%;
                 padding: 10px;
                 box-sizing: border-box;
-
-                @media screen and (max-width:700px) {
                 
-                    width: 70%;
-                    height: 50%;
-                    padding: 10px 0px 10px 0px;
-                    
-                    
-                } 
+
+                
+
+                @media screen and (max-width:500px) {
+
+                    width: 90%;
+                    height: auto;
+
+
+                }
 
 
                 a {
+                    
 
                     .foto {
                         width: 100%;
@@ -198,20 +207,26 @@ header {
                         cursor: pointer;
                         border-radius: 10px;
                         object-fit: cover;
-                        
+
+                        @media screen and (max-width:900px) {
+
+                            object-fit: scale-down;
+                            border-radius: 20px;;
+        
+                        }
 
                     }
                 }
 
 
             }
-     
+
         }
 
         .projects__button__container {
             margin-top: 40px;
             margin-bottom: 50px;
-    
+
             .projects__button {
                 padding: 10px 20px 10px 20px;
                 border: 2px solid #91769b;
@@ -222,19 +237,19 @@ header {
                 font-size: 16px;
                 color: #91769b;
                 ;
-    
+
                 &:hover {
                     background-color: rgba(56, 158, 119, 0.14);
                 }
-                
-    
+
+
             }
         }
-    
-    }
-    }
 
-   
+    }
+}
+
+
 
 #aboutme {
     padding: 50px;
@@ -247,8 +262,8 @@ header {
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        
-        
+
+
 
         @media screen and (max-width:700px) {
             flex-direction: column;
@@ -266,7 +281,7 @@ header {
             @media screen and (max-width:700px) {
                 width: 100%;
                 height: auto;
-                
+
             }
 
             img {
@@ -280,11 +295,11 @@ header {
         .aboutme__body__container {
             width: 40%;
             height: auto;
-            
+
             @media screen and (max-width:700px) {
                 width: 100%;
                 height: auto;
-                
+
             }
 
             .title {
@@ -300,7 +315,7 @@ header {
                 margin-bottom: 40px;
                 color: #91769b;
                 line-height: 120%;
-                font-size: clamp(1rem, 2vw, 2rem);
+                font-size: clamp(1rem, 2vw, 1.4rem);
             }
 
             .aboutme__button {
