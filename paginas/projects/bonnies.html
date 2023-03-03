@@ -8,24 +8,28 @@
     <link rel="shortcut icon" href="../../img/logo.png" />
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../../css/projects/agoodboy.css">
+    <link rel="stylesheet" href="../../css/projects/forprojects.css">
     <title>Maru</title>
 </head>
 
 <body>
     <div class="fullpage__container">
         <header>
-            <nav id="Home" class="navbar__container">
-                <ul class="nav">
-                    <li><a href="../../index.html">HOME</a> </li>
-                    <li><a href="../../paginas/aboutme.html">ABOUT</a> </li>
+            <nav id="home" class="navbar__container">
+                <div class="openMenu">
 
-                    <div class="logo__wrapper">
-                        <a href="../../index.html"><img class="img__logo" src="../../img/logoheader.png" alt=""></a>
-                    </div>
+                    <a class="img__logo__resp" href="../../index.html"><img class="img__logo__resp"
+                            src="../../img/logoheader.png" alt=""></a>
+                    <button id="opcl"><i class='bx bx-menu'></i></button>
+                </div>
 
-                    <li><a href="../../paginas/projects.html">PROJECTS</a> </li>
-                    <li><a href="../../paginas/contactme.html">CONTACT</a> </li>
+                <ul class="nav__list" id="navi">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../paginas/aboutme.html">ABOUT</a></li>
+                    <li id="logo" class="logo__wrapper"><a class="logo-link" href="../../index.html"><img
+                                class="img__logo" src="../../img/logoheader.png" alt=""></a></li>
+                    <li><a href="../../paginas/projects.html">PROJECTS</a></li>
+                    <li><a href="../../paginas/contactme.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,14 +43,11 @@
                     </div>
 
                     <div class="sec">
-                        <H2>BONNIE'S</H2>
+                        <H2>BOONIE’S BAGELS</H2>
                     </div>
 
                     <div class="ter">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fuga praesentium labore,
-                            impedit, aliquid dolorem dolores soluta, ullam dolorum animi culpa! Soluta, voluptatum.
-                            Cumque,
-                            id deleniti impedit</p>
+                        <p>Bonnie Bagels has been running in her kitchen since 2020, but recently she has taken the plunge and bought a new premises in town. She wanted a new Bold. Branding to help her stand out!</p>
                     </div>
                 </div>
 
@@ -83,14 +84,14 @@
                 <div class="logo__footer__container">
                     <img class="logo__footer" src="../../img/logo.png" alt="">
                 </div>
-    
+
                 <div class="social__container">
                     <a href="../../paginas/contactme.html"><i class='bx bx-envelope'></i></a>
                     <a target="_blank" href="https://www.behance.net/marumedina"><i class='bx bxl-behance'></i></a>
                     <a target="_blank" href="https://www.instagram.com/marula.design/"><i class='bx bxl-instagram'></i>
                     </a>
                 </div>
-    
+
                 <div class="copyRight">
                     <p>2023 &copy; All right reserved - Designed by Marula and developed by Emanuel Melian.
                     </p>
@@ -98,6 +99,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="../../JS/navBar.js"></script>
 </body>
 
 </html>

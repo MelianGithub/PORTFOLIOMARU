@@ -1,0 +1,165 @@
+@use '../parcel/reset';
+@use '../parcel/navbar';
+@use '../parcel/footer';
+
+.fullpage__container {
+    background: url("../../img/fondoproject.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+
+    .grande {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        row-gap: 30px;
+        margin-bottom: 70px;
+
+
+
+        .chico1 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            gap: 40px;
+
+
+
+            @media screen and (max-width:700px) {
+                margin: 0px;
+                width: 100%;
+                padding: 10px;
+            }
+
+
+            .pri {
+                font-family: RecoletaBold;
+                color: red;
+                font-size: clamp(0.9rem, 2vw, 1.2rem);
+            }
+
+            .sec {
+                font-family: RecoletaMed;
+                color: darkmagenta;
+                font-size: clamp(0.9rem, 2vw, 1.1rem);
+
+            }
+
+            .ter {
+                width: 60%;
+                font-size: clamp(0.9rem, 2vw, 1.2rem);
+                margin-bottom: 40px;
+
+                @media screen and (max-width:700px) {
+
+                    width: 100%;
+                }
+
+                p {
+                    width: 100%;
+                    font-family: ProximaReg;
+                    font-size: clamp(1.1rem, 2vw, 1.6rem);
+
+
+                }
+            }
+        }
+
+        .chico2 {
+            width: 80%;
+            height: auto;
+            
+            display: flex;
+            flex-wrap: wrap;
+
+            @media screen and (max-width:700px) {
+                margin: 0px;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .padre {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+
+            }
+
+        }
+
+        .chico3 {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            @media screen and (max-width:700px) {
+                margin: 0px;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .caja {
+                width: 33%;
+                position: relative;
+                top: 0;
+                left: 0;
+
+
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    
+
+
+                }
+
+                .blur {
+                    filter: blur(5px);
+                    /* elige el valor que desees */
+                }
+
+
+            }
+
+
+
+
+
+        }
+    }
+
+    img.expanded {
+        position: fixed;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 70%;
+        max-height: auto;
+        object-fit: cover;
+
+
+    }
+
+
+}

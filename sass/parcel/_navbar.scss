@@ -71,14 +71,12 @@
             gap: 2.5rem;
             background-color: rgba(31, 61, 71, 0.2196078431);
             backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(8px);
             position: absolute;
             top: 0;
             z-index: -1;
             height: 320px;
             padding-bottom: 40px;
-            
-
         }
 
 
@@ -98,6 +96,7 @@
                 max-width: 100%;
                 min-width: 200px;
                 padding: 20px;
+                margin-left: 40px;
 
                 @media screen and (max-width:700px) {}
             }
