@@ -73,6 +73,7 @@ p {
   width: 40px;
   font-size: 40px;
   background-color: transparent;
+  color: #fff;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .openMenu {
@@ -91,6 +92,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 10px;
+  margin-left: 20px;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .nav__list {
@@ -110,7 +112,7 @@ p {
   }
 }
 .navbar__container .nav__list .logo__wrapper {
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +126,11 @@ p {
   max-width: 100%;
   min-width: 200px;
   padding: 20px;
+}
+@media screen and (max-width: 850px) {
+  .navbar__container .nav__list .logo__wrapper .img__logo {
+    margin-left: 0px;
+  }
 }
 .navbar__container .nav__list li {
   list-style: none;
@@ -228,7 +235,7 @@ p {
 header {
   width: 100%;
   height: 120vh;
-  background: url(../img/headerimg.png), #d8cbcd;
+  background: url(../img/headerimg.png), RGB(200, 179, 206);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -254,6 +261,12 @@ header #header .header__container .header__body__container {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 850px) {
+  header #header .header__container .header__body__container {
+    width: 100%;
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 500px) {
   header #header .header__container .header__body__container {
     flex-direction: column;
@@ -265,7 +278,12 @@ header #header .header__container .header__body__container {
 header #header .header__container .header__body__container .title__header {
   width: 35%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
+  header #header .header__container .header__body__container .title__header {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
   header #header .header__container .header__body__container .title__header {
     width: 60%;
     margin-bottom: 30px;
@@ -278,11 +296,6 @@ header #header .header__container .header__body__container .title__header img:ho
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
 }
-@media screen and (max-width: 700px) {
-  header #header .header__container .header__body__container .title__header img {
-    width: 100%;
-  }
-}
 header #header .header__container .header__body__container .header__text {
   width: 50%;
 }
@@ -293,16 +306,20 @@ header #header .header__container .header__body__container .header__text {
 }
 header #header .header__container .header__body__container .header__text .first__text {
   width: 85%;
-  font-size: clamp(0.5rem, 2vw, 1.3rem);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   text-align: left;
   color: #91769b;
   margin: 0 auto;
   line-height: 1.3em;
 }
+@media screen and (max-width: 850px) {
+  header #header .header__container .header__body__container .header__text .first__text {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 500px) {
   header #header .header__container .header__body__container .header__text .first__text {
     width: 100%;
-    font-size: calc(1vw + 0.8em);
   }
 }
 header #header .header__container .title__footer {
@@ -339,7 +356,12 @@ header #header .header__container .title__footer p {
   background-position: bottom;
   padding-bottom: 40px;
   width: 100%;
-  height: 120vh;
+  height: 115vh;
+}
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  #projects {
+    height: 150vh;
+  }
 }
 #projects .projects__container {
   width: 100%;
@@ -349,10 +371,9 @@ header #header .header__container .title__footer p {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 500px) and (max-width: 850px) {
   #projects .projects__container {
-    width: 100%;
-    height: auto;
+    height: 145vh;
   }
 }
 #projects .projects__container .projects__title {
@@ -362,18 +383,19 @@ header #header .header__container .title__footer p {
   color: #91769b;
 }
 #projects .projects__container .projects__img__container {
-  width: 80%;
-  height: 80vh;
+  width: 90%;
+  height: 75vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   #projects .projects__container .projects__img__container {
+    flex-wrap: wrap;
+    overflow: hidden;
     width: 100%;
-    height: 80vh;
-    padding: 5px;
+    height: 125vh;
   }
 }
 @media screen and (max-width: 500px) {
@@ -390,10 +412,26 @@ header #header .header__container .title__footer p {
   padding: 10px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 850px) and (min-width: 500px) {
+  #projects .projects__container .projects__img__container .projects__img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #projects .projects__container .projects__img__container .projects__img:first-child {
+    width: 94%;
+    height: 60%;
+  }
+  #projects .projects__container .projects__img__container .projects__img + .projects__img {
+    width: 45%;
+    height: 45%;
+  }
+}
 @media screen and (max-width: 500px) {
   #projects .projects__container .projects__img__container .projects__img {
     width: 90%;
-    height: auto;
+    height: 80%;
   }
 }
 #projects .projects__container .projects__img__container .projects__img a .foto {
@@ -402,12 +440,6 @@ header #header .header__container .title__footer p {
   cursor: pointer;
   border-radius: 10px;
   object-fit: cover;
-}
-@media screen and (max-width: 900px) {
-  #projects .projects__container .projects__img__container .projects__img a .foto {
-    object-fit: scale-down;
-    border-radius: 20px;
-  }
 }
 #projects .projects__container .projects__button__container {
   margin-top: 40px;
@@ -439,7 +471,7 @@ header #header .header__container .title__footer p {
   align-items: center;
   margin: 0 auto;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   #aboutme .aboutme__container {
     flex-direction: column;
     justify-content: center;
@@ -455,7 +487,7 @@ header #header .header__container .title__footer p {
 }
 @media screen and (max-width: 700px) {
   #aboutme .aboutme__container .aboutme__img__container {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
@@ -477,9 +509,9 @@ header #header .header__container .title__footer p {
 }
 #aboutme .aboutme__container .aboutme__body__container .title {
   font-size: clamp(1rem, 2vw, 2rem);
-  color: #e9571c;
+  color: #FF7443;
   font-family: RecoletaMed;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-weight: lighter;
 }
 #aboutme .aboutme__container .aboutme__body__container .text {

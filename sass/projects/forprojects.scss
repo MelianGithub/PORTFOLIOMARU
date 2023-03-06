@@ -17,7 +17,7 @@
         justify-content: center;
         align-items: center;
         padding: 10px;
-        row-gap: 30px;
+        
         margin-bottom: 70px;
 
 
@@ -28,7 +28,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-           
+
             gap: 40px;
 
 
@@ -41,21 +41,20 @@
 
 
             .pri {
-                font-family: RecoletaBold;
-                color: red;
-                font-size: clamp(0.9rem, 2vw, 1.2rem);
+                font-family: RecoletaMed;
+                color: #FF7443;
+                font-size: clamp(0.6rem, 1vw, 0.6rem);
             }
 
             .sec {
-                font-family: RecoletaMed;
-                color: darkmagenta;
-                font-size: clamp(0.9rem, 2vw, 1.1rem);
+                font-family: ProxiamBold;
+                color: #91769b;
+                font-size: clamp(0.9rem, 2vw, 1.3rem);
 
             }
 
             .ter {
                 width: 60%;
-                font-size: clamp(0.9rem, 2vw, 1.2rem);
                 margin-bottom: 40px;
 
                 @media screen and (max-width:700px) {
@@ -65,8 +64,9 @@
 
                 p {
                     width: 100%;
-                    font-family: ProximaReg;
-                    font-size: clamp(1.1rem, 2vw, 1.6rem);
+                    font-family: ProxiamReg;
+                    font-size: clamp(1.1rem, 2vw, 1.4rem);
+                    color: #4D4D4D;
 
 
                 }
@@ -76,14 +76,15 @@
         .chico2 {
             width: 80%;
             height: auto;
-            
+
             display: flex;
             flex-wrap: wrap;
 
             @media screen and (max-width:700px) {
                 margin: 0px;
                 width: 100%;
-                padding: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
             }
 
             .padre {
@@ -108,12 +109,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
 
             @media screen and (max-width:700px) {
                 margin: 0px;
                 width: 100%;
-                padding: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
 
             .caja {
@@ -128,7 +129,7 @@
                     width: 100%;
                     border-radius: 10px;
                     cursor: pointer;
-                    
+
 
 
                 }
@@ -146,19 +147,6 @@
 
 
         }
-    }
-
-    img.expanded {
-        position: fixed;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 70%;
-        max-height: auto;
-        object-fit: cover;
-
-
     }
 
 

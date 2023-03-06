@@ -36,6 +36,7 @@
             width: 40px;
             font-size: 40px;
             background-color: transparent;
+            color: #fff;
         }
 
         @media screen and (max-width:700px) {
@@ -58,6 +59,7 @@
         justify-content: space-evenly;
         align-items: center;
         padding-top: 10px;
+        margin-left: 20px;
         
        
 
@@ -81,10 +83,11 @@
 
 
         .logo__wrapper {
-            width: 220px;
+            width: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
+            
 
             @media screen and (max-width:700px) {
                 display: none;
@@ -96,9 +99,11 @@
                 max-width: 100%;
                 min-width: 200px;
                 padding: 20px;
-                margin-left: 40px;
+                // margin-left: 40px;
 
-                @media screen and (max-width:700px) {}
+                @media screen and (max-width:850px) {
+                    margin-left: 0px;
+                }
             }
         }
 

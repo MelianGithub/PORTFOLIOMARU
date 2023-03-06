@@ -73,6 +73,7 @@ p {
   width: 40px;
   font-size: 40px;
   background-color: transparent;
+  color: #fff;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .openMenu {
@@ -91,6 +92,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 10px;
+  margin-left: 20px;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .nav__list {
@@ -110,7 +112,7 @@ p {
   }
 }
 .navbar__container .nav__list .logo__wrapper {
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +126,11 @@ p {
   max-width: 100%;
   min-width: 200px;
   padding: 20px;
+}
+@media screen and (max-width: 850px) {
+  .navbar__container .nav__list .logo__wrapper .img__logo {
+    margin-left: 0px;
+  }
 }
 .navbar__container .nav__list li {
   list-style: none;
@@ -246,7 +253,7 @@ body .contactme__container .description__container .title__container {
   font-family: RecoletaMed;
   font-size: clamp(0.9rem, 2vw, 1.4rem);
   text-align: center;
-  color: #e9571c;
+  color: #FF7443;
 }
 body .contactme__container .description__container .text__description {
   font-size: clamp(1rem, 2vw, 1.3rem);
@@ -274,7 +281,7 @@ body .contactme__container .form__contaiener {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: auto;
   padding: 20px;
 }
@@ -296,7 +303,7 @@ body .contactme__container .form__contaiener form {
 }
 @media screen and (max-width: 500px) {
   body .contactme__container .form__contaiener form {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
   }
 }
@@ -305,7 +312,7 @@ body .contactme__container .form__contaiener form #name {
 }
 body .contactme__container .form__contaiener form label {
   padding: 5px;
-  font-weight: bold;
+  font-family: ProxiamBold;
 }
 body .contactme__container .form__contaiener form input,
 body .contactme__container .form__contaiener form textarea {
@@ -324,6 +331,7 @@ body .contactme__container .form__contaiener form .input__submit {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 50px;
+  color: #4D4D4D;
 }
 @media screen and (max-width: 500px) {
   body .contactme__container .form__contaiener form .input__submit {

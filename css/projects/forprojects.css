@@ -73,6 +73,7 @@ p {
   width: 40px;
   font-size: 40px;
   background-color: transparent;
+  color: #fff;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .openMenu {
@@ -91,6 +92,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 10px;
+  margin-left: 20px;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .nav__list {
@@ -110,7 +112,7 @@ p {
   }
 }
 .navbar__container .nav__list .logo__wrapper {
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +126,11 @@ p {
   max-width: 100%;
   min-width: 200px;
   padding: 20px;
-  margin-left: 40px;
+}
+@media screen and (max-width: 850px) {
+  .navbar__container .nav__list .logo__wrapper .img__logo {
+    margin-left: 0px;
+  }
 }
 .navbar__container .nav__list li {
   list-style: none;
@@ -227,7 +233,6 @@ p {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  row-gap: 30px;
   margin-bottom: 70px;
 }
 .fullpage__container .grande .chico1 {
@@ -246,18 +251,17 @@ p {
   }
 }
 .fullpage__container .grande .chico1 .pri {
-  font-family: RecoletaBold;
-  color: red;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-family: RecoletaMed;
+  color: #FF7443;
+  font-size: clamp(0.6rem, 1vw, 0.6rem);
 }
 .fullpage__container .grande .chico1 .sec {
-  font-family: RecoletaMed;
-  color: darkmagenta;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-family: ProxiamBold;
+  color: #91769b;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
 }
 .fullpage__container .grande .chico1 .ter {
   width: 60%;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
   margin-bottom: 40px;
 }
 @media screen and (max-width: 700px) {
@@ -267,8 +271,9 @@ p {
 }
 .fullpage__container .grande .chico1 .ter p {
   width: 100%;
-  font-family: ProximaReg;
-  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-family: ProxiamReg;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: #4D4D4D;
 }
 .fullpage__container .grande .chico2 {
   width: 80%;
@@ -280,7 +285,8 @@ p {
   .fullpage__container .grande .chico2 {
     margin: 0px;
     width: 100%;
-    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 .fullpage__container .grande .chico2 .padre {
@@ -303,7 +309,8 @@ p {
   .fullpage__container .grande .chico3 {
     margin: 0px;
     width: 100%;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .fullpage__container .grande .chico3 .caja {
@@ -320,16 +327,6 @@ p {
 .fullpage__container .grande .chico3 .caja .blur {
   filter: blur(5px);
   /* elige el valor que desees */
-}
-.fullpage__container img.expanded {
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 70%;
-  max-height: auto;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=forprojects.css.map */
