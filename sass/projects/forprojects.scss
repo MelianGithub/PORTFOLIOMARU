@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     padding-top: 100px;
 
-    .grande {
+    .main__contenedor {
         width: 100%;
         height: 100%;
         text-align: center;
@@ -17,21 +17,15 @@
         justify-content: center;
         align-items: center;
         padding: 10px;
-        
         margin-bottom: 70px;
 
-
-
-        .chico1 {
+        .header__project {
             width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
             gap: 40px;
-
-
 
             @media screen and (max-width:700px) {
                 margin: 0px;
@@ -39,26 +33,23 @@
                 padding: 10px;
             }
 
-
-            .pri {
+            .passion__project {
                 font-family: RecoletaMed;
                 color: #FF7443;
                 font-size: clamp(0.6rem, 1vw, 0.6rem);
             }
 
-            .sec {
+            .title__project {
                 font-family: ProxiamBold;
                 color: #91769b;
                 font-size: clamp(0.9rem, 2vw, 1.3rem);
-
             }
 
-            .ter {
+            .description__project {
                 width: 60%;
                 margin-bottom: 40px;
 
                 @media screen and (max-width:700px) {
-
                     width: 100%;
                 }
 
@@ -67,16 +58,13 @@
                     font-family: ProxiamReg;
                     font-size: clamp(1.1rem, 2vw, 1.4rem);
                     color: #4D4D4D;
-
-
                 }
             }
         }
 
-        .chico2 {
+        .gallery__container {
             width: 80%;
-            height: auto;
-
+            height: 100%;
             display: flex;
             flex-wrap: wrap;
 
@@ -87,24 +75,31 @@
                 padding-left: 10px;
             }
 
-            .padre {
+            .gallery__wrapper {
                 width: 100%;
+                height: 100%;
                 display: flex;
                 gap: 10px;
 
+                @media screen and (max-width:500px) {
+                    flex-direction: column;
+                }
 
                 img {
                     width: 100%;
+                    height: 100%;
                     border-radius: 10px;
                     cursor: pointer;
+
+                    @media screen and (max-width:500px) {
+                        width: 95%;
+                        
+                    }
                 }
-
-
             }
-
         }
 
-        .chico3 {
+        .gallery__wrapper__footer {
             width: 80%;
             display: flex;
             justify-content: space-between;
@@ -117,37 +112,23 @@
                 padding-right: 10px;
             }
 
-            .caja {
+            .container {
                 width: 33%;
                 position: relative;
                 top: 0;
                 left: 0;
 
-
-
                 img {
                     width: 100%;
                     border-radius: 10px;
                     cursor: pointer;
-
-
-
                 }
 
                 .blur {
                     filter: blur(5px);
                     /* elige el valor que desees */
                 }
-
-
             }
-
-
-
-
-
         }
     }
-
-
 }

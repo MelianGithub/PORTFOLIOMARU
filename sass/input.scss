@@ -147,7 +147,7 @@ header {
                     margin: 0 auto;
                     width: 40%;
                     text-align: center;
-                    font-size: calc(1vw + .5em);
+                    font-size: clamp(1rem, 2vw, 1.3rem);
                     line-height: 120%;
 
                     @media screen and (max-width:500px) {
@@ -371,7 +371,7 @@ header {
                 margin-bottom: 40px;
                 color: #91769b;
                 line-height: 120%;
-                font-size: clamp(1rem, 2vw, 1.4rem);
+                font-size: clamp(1rem, 2vw, 1.3rem);
             }
 
             .aboutme__button {

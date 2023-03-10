@@ -39,7 +39,7 @@ p {
 }
 
 .navbar__container {
-  width: 100%;
+  width: 99%;
   height: auto;
   margin: 0 auto;
   position: absolute;
@@ -86,7 +86,7 @@ p {
   }
 }
 .navbar__container .nav__list {
-  width: 100%;
+  width: 99%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -112,7 +112,7 @@ p {
   }
 }
 .navbar__container .nav__list .logo__wrapper {
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;

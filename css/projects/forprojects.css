@@ -39,7 +39,7 @@ p {
 }
 
 .navbar__container {
-  width: 100%;
+  width: 99%;
   height: auto;
   margin: 0 auto;
   position: absolute;
@@ -86,7 +86,7 @@ p {
   }
 }
 .navbar__container .nav__list {
-  width: 100%;
+  width: 99%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -224,7 +224,7 @@ p {
   background-repeat: no-repeat;
   padding-top: 100px;
 }
-.fullpage__container .grande {
+.fullpage__container .main__contenedor {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -235,7 +235,7 @@ p {
   padding: 10px;
   margin-bottom: 70px;
 }
-.fullpage__container .grande .chico1 {
+.fullpage__container .main__contenedor .header__project {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -244,87 +244,99 @@ p {
   gap: 40px;
 }
 @media screen and (max-width: 700px) {
-  .fullpage__container .grande .chico1 {
+  .fullpage__container .main__contenedor .header__project {
     margin: 0px;
     width: 100%;
     padding: 10px;
   }
 }
-.fullpage__container .grande .chico1 .pri {
+.fullpage__container .main__contenedor .header__project .passion__project {
   font-family: RecoletaMed;
   color: #FF7443;
   font-size: clamp(0.6rem, 1vw, 0.6rem);
 }
-.fullpage__container .grande .chico1 .sec {
+.fullpage__container .main__contenedor .header__project .title__project {
   font-family: ProxiamBold;
   color: #91769b;
   font-size: clamp(0.9rem, 2vw, 1.3rem);
 }
-.fullpage__container .grande .chico1 .ter {
+.fullpage__container .main__contenedor .header__project .description__project {
   width: 60%;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 700px) {
-  .fullpage__container .grande .chico1 .ter {
+  .fullpage__container .main__contenedor .header__project .description__project {
     width: 100%;
   }
 }
-.fullpage__container .grande .chico1 .ter p {
+.fullpage__container .main__contenedor .header__project .description__project p {
   width: 100%;
   font-family: ProxiamReg;
   font-size: clamp(1.1rem, 2vw, 1.4rem);
   color: #4D4D4D;
 }
-.fullpage__container .grande .chico2 {
+.fullpage__container .main__contenedor .gallery__container {
   width: 80%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 700px) {
-  .fullpage__container .grande .chico2 {
+  .fullpage__container .main__contenedor .gallery__container {
     margin: 0px;
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
   }
 }
-.fullpage__container .grande .chico2 .padre {
+.fullpage__container .main__contenedor .gallery__container .gallery__wrapper {
   width: 100%;
+  height: 100%;
   display: flex;
   gap: 10px;
 }
-.fullpage__container .grande .chico2 .padre img {
+@media screen and (max-width: 500px) {
+  .fullpage__container .main__contenedor .gallery__container .gallery__wrapper {
+    flex-direction: column;
+  }
+}
+.fullpage__container .main__contenedor .gallery__container .gallery__wrapper img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
-.fullpage__container .grande .chico3 {
+@media screen and (max-width: 500px) {
+  .fullpage__container .main__contenedor .gallery__container .gallery__wrapper img {
+    width: 95%;
+  }
+}
+.fullpage__container .main__contenedor .gallery__wrapper__footer {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 700px) {
-  .fullpage__container .grande .chico3 {
+  .fullpage__container .main__contenedor .gallery__wrapper__footer {
     margin: 0px;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-.fullpage__container .grande .chico3 .caja {
+.fullpage__container .main__contenedor .gallery__wrapper__footer .container {
   width: 33%;
   position: relative;
   top: 0;
   left: 0;
 }
-.fullpage__container .grande .chico3 .caja img {
+.fullpage__container .main__contenedor .gallery__wrapper__footer .container img {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
-.fullpage__container .grande .chico3 .caja .blur {
+.fullpage__container .main__contenedor .gallery__wrapper__footer .container .blur {
   filter: blur(5px);
   /* elige el valor que desees */
 }
