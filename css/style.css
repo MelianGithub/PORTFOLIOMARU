@@ -93,6 +93,7 @@ p {
   align-items: center;
   padding-top: 10px;
   margin-left: 20px;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .nav__list {
@@ -109,6 +110,14 @@ p {
     z-index: -1;
     height: 320px;
     padding-bottom: 40px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease-in-out;
+  }
+  .navbar__container .nav__list.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .navbar__container .nav__list .logo__wrapper {
@@ -126,6 +135,9 @@ p {
   max-width: 100%;
   min-width: 200px;
   padding: 20px;
+  position: relative;
+  top: 0;
+  left: 30px;
 }
 @media screen and (max-width: 850px) {
   .navbar__container .nav__list .logo__wrapper .img__logo {
@@ -162,9 +174,6 @@ p {
 }
 .navbar__container .nav__list li .logo-link:hover::after {
   border-bottom: none;
-}
-.navbar__container .visible {
-  visibility: visible;
 }
 
 #footer {
@@ -239,6 +248,9 @@ header {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  z-index: 1;
 }
 header #header .header__container {
   width: 100%;
@@ -319,7 +331,7 @@ header #header .header__container .header__body__container .header__text .first_
 }
 @media screen and (max-width: 500px) {
   header #header .header__container .header__body__container .header__text .first__text {
-    width: 100%;
+    width: 90%;
   }
 }
 header #header .header__container .title__footer {
@@ -485,7 +497,7 @@ header #header .header__container .title__footer p {
   width: 40%;
   height: 100%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   #aboutme .aboutme__container .aboutme__img__container {
     width: 80%;
     height: auto;
@@ -501,7 +513,7 @@ header #header .header__container .title__footer p {
   width: 40%;
   height: auto;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   #aboutme .aboutme__container .aboutme__body__container {
     width: 100%;
     height: auto;
@@ -511,11 +523,16 @@ header #header .header__container .title__footer p {
   font-size: clamp(1rem, 2vw, 2rem);
   color: #FF7443;
   font-family: RecoletaMed;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   font-weight: lighter;
 }
+@media screen and (max-width: 500px) {
+  #aboutme .aboutme__container .aboutme__body__container .title {
+    margin: 10px;
+  }
+}
 #aboutme .aboutme__container .aboutme__body__container .text {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: #91769b;
   line-height: 120%;
   font-size: clamp(1rem, 2vw, 1.3rem);

@@ -93,6 +93,7 @@ p {
   align-items: center;
   padding-top: 10px;
   margin-left: 20px;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 700px) {
   .navbar__container .nav__list {
@@ -109,6 +110,14 @@ p {
     z-index: -1;
     height: 320px;
     padding-bottom: 40px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease-in-out;
+  }
+  .navbar__container .nav__list.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .navbar__container .nav__list .logo__wrapper {
@@ -126,6 +135,9 @@ p {
   max-width: 100%;
   min-width: 200px;
   padding: 20px;
+  position: relative;
+  top: 0;
+  left: 30px;
 }
 @media screen and (max-width: 850px) {
   .navbar__container .nav__list .logo__wrapper .img__logo {
@@ -162,9 +174,6 @@ p {
 }
 .navbar__container .nav__list li .logo-link:hover::after {
   border-bottom: none;
-}
-.navbar__container .visible {
-  visibility: visible;
 }
 
 #footer {
